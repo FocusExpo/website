@@ -52,25 +52,21 @@ export default function Hero() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[24px] items-center justify-center relative shrink-0 w-full px-4" data-node-id="7:120">
                     <div className="content-stretch flex items-center justify-center relative rounded-[4px] shrink-0 w-full max-w-md" data-node-id="11:604">
-                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-[#3ea0ab] text-xl md:text-[24px] text-center w-full" data-node-id="4:532">
+                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-[#3ea0ab] text-2xl md:text-5xl text-center w-full" data-node-id="4:532">
                             <p className="whitespace-pre-wrap">April 4, 2026 | Allen, TX</p>
                         </div>
                     </div>
-                    <div className="content-stretch flex flex-col md:flex-row gap-[16px] items-center relative shrink-0 w-full max-w-md" data-name="Container" data-node-id="4:533">
-                        <button className="bg-[#3ea0ab] flex-[1_0_0] relative rounded-[4px] cursor-pointer hover:bg-[#2d7a83] transition-colors w-full md:w-auto" data-name="Button" data-node-id="4:534">
-                            <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[39px] py-[15px] relative w-full">
-                                <p className="font-['Transducer_Test:Bold',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#1c3d42] text-[14px] text-center tracking-[1px] uppercase" data-node-id="4:535">
-                                    Sign Up Now
-                                </p>
-                            </div>
+                    <div className="flex flex-col md:flex-row gap-[16px] items-center justify-center relative shrink-0 w-full max-w-lg" data-name="Container" data-node-id="4:533">
+                        <button className="bg-[#3ea0ab] flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-[#2d7a83] transition-colors border-2 border-[#3ea0ab] flex items-center justify-center" data-name="Button" data-node-id="4:534">
+                            <p className="font-['Transducer_Test:Bold',sans-serif] text-[#1c3d42] text-[14px] text-center tracking-[1px] uppercase">
+                                Sign Up Now
+                            </p>
                         </button>
-                        <button className="border-2 border-[#3ea0ab] border-solid flex-[1_0_0] h-[54px] min-h-px min-w-px relative rounded-[4px] cursor-pointer hover:bg-[#3ea0ab]/10 transition-colors" data-name="Button" data-node-id="4:536">
-                            <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[43px] py-[17px] relative size-full">
-                                <p className="font-['Transducer_Test:Bold',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#3ea0ab] text-[14px] text-center tracking-[1px] uppercase" data-node-id="4:537">
-                                    Learn More
-                                </p>
-                            </div>
-                        </button>
+                        <a href="#about" className="flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-[#3ea0ab]/10 transition-colors border-2 border-[#3ea0ab] flex items-center justify-center text-decoration-none" data-name="Button" data-node-id="4:536">
+                            <p className="font-['Transducer_Test:Bold',sans-serif] text-[#3ea0ab] text-[14px] text-center tracking-[1px] uppercase">
+                                Learn More
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
