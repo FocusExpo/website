@@ -84,7 +84,7 @@ export default function Speakers() {
                     style={{ scrollBehavior: 'smooth' }}
                 >
                     {speakers.map((speaker, index) => (
-                        <div key={index} className="snap-center shrink-0 w-[85vw] flex flex-col group">
+                        <div key={index} className="snap-center shrink-0 w-[260px] flex flex-col group">
                             <div className="relative overflow-hidden rounded-lg border-2 border-[#3ea0ab] aspect-[3/4] mb-4 bg-[#1c3d42]/5">
                                 <img
                                     src={speaker.image}
@@ -92,10 +92,10 @@ export default function Speakers() {
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <h3 className="font-['Space_Grotesk:Bold',sans-serif] font-bold text-[#1c3d42] text-xl mb-1">
+                            <h3 className="font-['Space_Grotesk:Bold',sans-serif] font-bold text-[#1c3d42] text-lg mb-1">
                                 {speaker.name}
                             </h3>
-                            <p className="font-['Inter:Regular',sans-serif] text-[#1c3d42]/80 text-sm">
+                            <p className="font-['Inter:Regular',sans-serif] text-[#1c3d42]/80 text-xs">
                                 {speaker.role}
                             </p>
                         </div>

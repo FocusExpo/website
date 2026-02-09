@@ -90,19 +90,19 @@ export default function Pillars() {
                         {pillars.map((pillar, index) => (
                             <div
                                 key={index}
-                                className="snap-center shrink-0 w-[85vw] flex flex-col items-center justify-center p-8 text-center rounded-xl bg-white shadow-sm border-t-8"
+                                className="snap-center shrink-0 w-[85vw] max-w-[320px] flex flex-col items-center justify-center p-6 text-center rounded-xl bg-white shadow-sm border-t-8"
                                 style={{ borderColor: pillar.color }}
                             >
                                 <div
-                                    className="font-['Museo_Sans:900',sans-serif] text-8xl leading-none mb-4"
+                                    className="font-['Museo_Sans:900',sans-serif] text-6xl leading-none mb-4"
                                     style={{ color: pillar.color }}
                                 >
                                     {pillar.letter}
                                 </div>
-                                <h3 className="font-['Museo_Sans:900',sans-serif] text-[#1c3d42] text-2xl mb-2">
+                                <h3 className="font-['Museo_Sans:900',sans-serif] text-[#1c3d42] text-xl mb-2">
                                     {pillar.title}
                                 </h3>
-                                <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-base leading-relaxed">
+                                <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-sm leading-relaxed">
                                     {pillar.description}
                                 </p>
                             </div>

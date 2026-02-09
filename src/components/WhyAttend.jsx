@@ -86,14 +86,14 @@ export default function WhyAttend() {
                     style={{ scrollBehavior: 'smooth' }}
                 >
                     {reasons.map((reason, index) => (
-                        <div key={index} className="snap-center shrink-0 w-[85vw] bg-[#faf7f2] border-2 flex flex-col gap-[24px] min-h-[300px] h-auto items-start p-8 relative rounded-[6px]" style={{ borderColor: reason.borderColor }}>
-                            <div className="size-[48px] relative shrink-0 mb-2">
+                        <div key={index} className="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#faf7f2] border-2 flex flex-col gap-[20px] min-h-[280px] h-auto items-start p-6 relative rounded-[6px]" style={{ borderColor: reason.borderColor }}>
+                            <div className="size-[40px] relative shrink-0 mb-2">
                                 <img alt="" className="w-full h-full" src={reason.icon} />
                             </div>
-                            <h3 className="font-['Museo_Sans:700',sans-serif] text-[#1c3d42] text-2xl leading-tight">
+                            <h3 className="font-['Museo_Sans:700',sans-serif] text-[#1c3d42] text-xl leading-tight">
                                 {reason.title}
                             </h3>
-                            <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-base leading-relaxed opacity-90">
+                            <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-sm leading-relaxed opacity-90">
                                 {reason.description}
                             </p>
                         </div>
