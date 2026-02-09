@@ -1,5 +1,6 @@
 
 import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 import About from './components/About';
 import Pillars from './components/Pillars';
 import WhyAttend from './components/WhyAttend';
@@ -13,6 +14,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="bg-[#f2f2f1] min-h-screen">
+      <Navbar />
       <Hero />
       <About />
       <Pillars />

@@ -1,6 +1,5 @@
 
-import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
 
 const pillars = [
     {
@@ -36,21 +35,17 @@ const pillars = [
 ];
 
 export default function Pillars() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const scrollRef = useRef(null);
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % pillars.length);
+    const handleScroll = () => {
+        if (scrollRef.current) {
+            const scrollLeft = scrollRef.current.scrollLeft;
+            const itemWidth = scrollRef.current.offsetWidth;
+            const index = Math.round(scrollLeft / itemWidth);
+            setActiveIndex(index);
+        }
     };
-
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + pillars.length) % pillars.length);
-    };
-
-    // Auto-advance carousel
-    useEffect(() => {
-        const interval = setInterval(nextSlide, 5000);
-        return () => clearInterval(interval);
-    }, []);
 
     return (
         <div id="pillars" className="bg-[#faf7f2] flex flex-col items-center justify-center py-20 relative w-full overflow-hidden">
@@ -64,57 +59,62 @@ export default function Pillars() {
                     </h2>
                 </div>
 
-                <div className="relative w-full max-w-xl mx-auto mt-8">
-                    {/* Carousel Container */}
-                    <div className="overflow-hidden rounded-xl shadow-lg bg-white relative">
-                        <div
-                            className="flex transition-transform duration-500 ease-in-out h-[400px]"
-                            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                        >
-                            {pillars.map((pillar, index) => (
-                                <div key={index} className="w-full flex-shrink-0 flex flex-col items-center justify-center p-8 md:p-12 text-center" style={{ borderTop: `8px solid ${pillar.color}` }}>
-                                    <div
-                                        className="font-['Museo_Sans:900',sans-serif] text-[120px] leading-none mb-4"
-                                        style={{ color: pillar.color }}
-                                    >
-                                        {pillar.letter}
-                                    </div>
-                                    <h3 className="font-['Museo_Sans:900',sans-serif] text-[#1c3d42] text-3xl mb-4">
-                                        {pillar.title}
-                                    </h3>
-                                    <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-lg leading-relaxed max-w-md">
-                                        {pillar.description}
-                                    </p>
-                                </div>
-                            ))}
+                {/* Desktop Grid Layout */}
+                <div className="hidden md:flex flex-wrap justify-center gap-6 w-full max-w-7xl mt-8">
+                    {pillars.map((pillar, index) => (
+                        <div key={index} className="flex flex-col items-start p-8 rounded-lg border-2 bg-white w-[300px] min-h-[300px]" style={{ borderColor: pillar.color }}>
+                            <div
+                                className="font-['Museo_Sans:900',sans-serif] text-6xl leading-none mb-4"
+                                style={{ color: pillar.color }}
+                            >
+                                {pillar.letter}
+                            </div>
+                            <h3 className="font-['Museo_Sans:900',sans-serif] text-[#1c3d42] text-2xl mb-2">
+                                {pillar.title}
+                            </h3>
+                            <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-sm leading-relaxed">
+                                {pillar.description}
+                            </p>
                         </div>
-                    </div>
+                    ))}
+                </div>
 
-                    {/* Navigation Buttons */}
-                    <button
-                        onClick={prevSlide}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all text-[#1c3d42]"
-                        aria-label="Previous slide"
+                {/* Mobile Carousel Layout */}
+                <div className="md:hidden w-full mt-8 relative">
+                    <div
+                        ref={scrollRef}
+                        onScroll={handleScroll}
+                        className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 px-4 scrollbar-hide"
+                        style={{ scrollBehavior: 'smooth' }}
                     >
-                        <ChevronLeft size={32} />
-                    </button>
-                    <button
-                        onClick={nextSlide}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all text-[#1c3d42]"
-                        aria-label="Next slide"
-                    >
-                        <ChevronRight size={32} />
-                    </button>
-
-                    {/* Indicators */}
-                    <div className="flex justify-center gap-3 mt-8">
-                        {pillars.map((_, index) => (
-                            <button
+                        {pillars.map((pillar, index) => (
+                            <div
                                 key={index}
-                                onClick={() => setCurrentIndex(index)}
-                                className={`h-3 rounded-full transition-all duration-300 ${index === currentIndex ? 'w-8 bg-[#1c3d42]' : 'w-3 bg-[#1c3d42]/30'
+                                className="snap-center shrink-0 w-[85vw] flex flex-col items-center justify-center p-8 text-center rounded-xl bg-white shadow-sm border-t-8"
+                                style={{ borderColor: pillar.color }}
+                            >
+                                <div
+                                    className="font-['Museo_Sans:900',sans-serif] text-8xl leading-none mb-4"
+                                    style={{ color: pillar.color }}
+                                >
+                                    {pillar.letter}
+                                </div>
+                                <h3 className="font-['Museo_Sans:900',sans-serif] text-[#1c3d42] text-2xl mb-2">
+                                    {pillar.title}
+                                </h3>
+                                <p className="font-['Museo_Sans:500',sans-serif] text-[#1c3d42] text-base leading-relaxed">
+                                    {pillar.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                    {/* Pagination Dots */}
+                    <div className="flex justify-center gap-2 mt-4">
+                        {pillars.map((_, index) => (
+                            <div
+                                key={index}
+                                className={`h-2 rounded-full transition-all duration-300 ${index === activeIndex ? 'w-6 bg-[#1c3d42]' : 'w-2 bg-[#1c3d42]/20'
                                     }`}
-                                aria-label={`Go to slide ${index + 1}`}
                             />
                         ))}
                     </div>
