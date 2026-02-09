@@ -6,11 +6,11 @@ const imgGroup4 = "/assets/imgGroup4.svg";
 
 export default function Footer() {
     return (
-        <div className="bg-[#1c3d42] content-stretch flex flex-col gap-[48px] items-start pb-[100px] pt-[120px] px-[376.5px] relative shrink-0 w-full" data-name="10_Section_Footer" data-node-id="4:620">
-            <div className="absolute h-[489px] left-0 top-[0.5px] w-[1920px]" data-name="Layer_10" data-node-id="7:106">
-                <img alt="" className="block max-w-none size-full" src={imgLayer12} />
+        <div className="bg-[#1c3d42] content-stretch flex flex-col gap-[48px] items-center pb-[50px] pt-[60px] px-4 md:px-[100px] relative shrink-0 w-full overflow-hidden" data-name="10_Section_Footer" data-node-id="4:620">
+            <div className="absolute h-full w-full left-0 top-0 pointer-events-none" data-name="Layer_10" data-node-id="7:106">
+                <img alt="" className="block w-full h-full object-cover opacity-50" src={imgLayer12} />
             </div>
-            <div className="gap-[48px] grid grid-cols-[repeat(3,_minmax(0,_1fr))] grid-rows-[repeat(1,_minmax(0,_1fr))] h-[168px] relative shrink-0 w-full" data-name="Container" data-node-id="4:621">
+            <div className="gap-[48px] grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl relative z-10" data-name="Container" data-node-id="4:621">
                 <div className="col-[1] content-stretch flex flex-col gap-[32px] items-start justify-self-stretch relative row-[1] self-stretch shrink-0" data-name="Container" data-node-id="4:622">
                     <div className="content-stretch flex items-start relative shrink-0" data-name="Container" data-node-id="4:623">
                         <div className="relative shrink-0" data-name="Layer_8" data-node-id="6:86">
@@ -88,18 +88,16 @@ export default function Footer() {
                                 </p>
                             </div>
                         </div>
-                        <div className="bg-[#3ea0ab] h-[38px] relative rounded-[4px] shrink-0 w-[60.875px]" data-name="Button" data-node-id="4:649">
-                            <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-                                <p className="-translate-x-1/2 absolute font-['Museo_Sans:700',sans-serif] leading-[20px] left-[30.5px] not-italic text-[14px] text-center text-white top-[9px]" data-node-id="4:650">
-                                    Join
-                                </p>
+                        <div className="bg-[#3ea0ab] h-[38px] relative rounded-[4px] shrink-0 w-[80px] flex items-center justify-center cursor-pointer hover:bg-[#2d7a83] transition-colors" data-name="Button" data-node-id="4:649">
+                            <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full flex items-center justify-center text-white font-bold text-sm">
+                                Join
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="border-[#2a5359] border-solid border-t h-[53px] opacity-75 relative shrink-0 w-full" data-name="Container" data-node-id="4:651">
-                <p className="-translate-x-1/2 absolute font-['Museo_Sans:500',sans-serif] leading-[20px] left-[576.91px] not-italic text-[#e5e5e3] text-[14px] text-center top-[32px]" data-node-id="4:652">
+            <div className="border-[#2a5359] border-solid border-t h-auto py-8 opacity-75 relative shrink-0 w-full flex justify-center items-center z-10" data-name="Container" data-node-id="4:651">
+                <p className="font-['Museo_Sans:500',sans-serif] leading-[20px] not-italic text-[#e5e5e3] text-[14px] text-center" data-node-id="4:652">
                     © 2026 FOCUS EXPO. All rights reserved.
                 </p>
             </div>

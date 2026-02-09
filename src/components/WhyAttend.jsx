@@ -19,7 +19,7 @@ export default function WhyAttend() {
                 </div>
             </div>
             <div className="container mx-auto px-4 max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 relative shrink-0 w-full" data-name="Container" data-node-id="11:671">
-                <div className="bg-[#faf7f2] border-2 border-[#52a0ad] border-solid flex flex-col gap-[24px] h-[335px] items-start pb-[2px] pt-[34px] px-[34px] relative rounded-[6px]" data-name="Container" data-node-id="11:672">
+                <div className="bg-[#faf7f2] border-2 border-[#52a0ad] border-solid flex flex-col gap-[24px] min-h-[335px] h-auto items-start pb-[2px] pt-[34px] px-[34px] relative rounded-[6px]" data-name="Container" data-node-id="11:672">
                     <div className="content-stretch flex items-start p-[10px] relative shrink-0 w-full" data-name="Container" data-node-id="11:673">
                         <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0" data-node-id="17:42">
                             <div className="col-1 ml-0 mt-0 relative row-1 size-[48px]" data-name="Layer_1" data-node-id="17:32">
@@ -38,7 +38,7 @@ export default function WhyAttend() {
                         </p>
                     </div>
                 </div>
-                <div className="bg-[#faf7f2] border-2 border-[#f68d6f] border-solid flex flex-col gap-[24px] h-[335px] items-start pb-[2px] pt-[34px] px-[34px] relative rounded-[6px]" data-name="Container" data-node-id="11:679">
+                <div className="bg-[#faf7f2] border-2 border-[#f68d6f] border-solid flex flex-col gap-[24px] min-h-[335px] h-auto items-start pb-[2px] pt-[34px] px-[34px] relative rounded-[6px]" data-name="Container" data-node-id="11:679">
                     <div className="content-stretch flex items-start p-[10px] relative shrink-0 w-full" data-name="Container" data-node-id="17:70">
                         <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0" data-node-id="17:71">
                             <div className="col-1 ml-0 mt-0 relative row-1 size-[48px]" data-name="Frame" data-node-id="17:82">
@@ -57,7 +57,7 @@ export default function WhyAttend() {
                         </p>
                     </div>
                 </div>
-                <div className="bg-[#faf7f2] border-2 border-[#52a0ad] border-solid flex flex-col gap-[24px] h-[335px] items-start pb-[2px] pt-[34px] px-[34px] relative rounded-[6px]" data-name="Container" data-node-id="11:686">
+                <div className="bg-[#faf7f2] border-2 border-[#52a0ad] border-solid flex flex-col gap-[24px] min-h-[335px] h-auto items-start pb-[2px] pt-[34px] px-[34px] relative rounded-[6px]" data-name="Container" data-node-id="11:686">
                     <div className="content-stretch flex items-start p-[10px] relative shrink-0 w-full" data-name="Container" data-node-id="17:99">
                         <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid items-[start] justify-items-[start] leading-[0] relative shrink-0" data-node-id="17:100">
                             <div className="col-1 ml-0 mt-0 relative row-1 size-[48px]" data-name="Frame" data-node-id="17:85">

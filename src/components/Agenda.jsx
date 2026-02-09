@@ -14,7 +14,7 @@ export default function Agenda() {
                 </div>
             </div>
             <div className="container mx-auto px-4 max-w-4xl flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-name="Container" data-node-id="11:707">
-                <div className="bg-[#f2e7d1] content-stretch flex gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:708">
+                <div className="bg-[#f2e7d1] content-stretch flex gap-4 md:gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-4 md:px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:708">
                     <div className="h-[28px] relative shrink-0 w-[96px]" data-name="Container" data-node-id="11:709">
                         <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
                             <p className="absolute font-['Museo_Sans:700',sans-serif] leading-[28px] left-0 not-italic text-[#52a0ad] text-[18px] top-0" data-node-id="11:710">
@@ -36,7 +36,7 @@ export default function Agenda() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#f2e7d1] content-stretch flex gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:717">
+                <div className="bg-[#f2e7d1] content-stretch flex gap-4 md:gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-4 md:px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:717">
                     <div className="h-[28px] relative shrink-0 w-[96px]" data-name="Container" data-node-id="11:718">
                         <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
                             <p className="absolute font-['Museo_Sans:700',sans-serif] leading-[28px] left-0 not-italic text-[#f68d6f] text-[18px] top-0" data-node-id="11:719">
@@ -60,7 +60,7 @@ export default function Agenda() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#f2e7d1] content-stretch flex gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:726">
+                <div className="bg-[#f2e7d1] content-stretch flex gap-4 md:gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-4 md:px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:726">
                     <div className="h-[28px] relative shrink-0 w-[96px]" data-name="Container" data-node-id="11:727">
                         <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
                             <p className="absolute font-['Museo_Sans:700',sans-serif] leading-[28px] left-0 not-italic text-[#e47159] text-[18px] top-0" data-node-id="11:728">
@@ -82,7 +82,7 @@ export default function Agenda() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#f2e7d1] content-stretch flex gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:735">
+                <div className="bg-[#f2e7d1] content-stretch flex gap-4 md:gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-4 md:px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:735">
                     <div className="h-[28px] relative shrink-0 w-[96px]" data-name="Container" data-node-id="11:736">
                         <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
                             <p className="absolute font-['Museo_Sans:700',sans-serif] leading-[28px] left-0 not-italic text-[#3d7a85] text-[18px] top-0" data-node-id="11:737">
@@ -106,7 +106,7 @@ export default function Agenda() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#f2e7d1] content-stretch flex gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:744">
+                <div className="bg-[#f2e7d1] content-stretch flex gap-4 md:gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-4 md:px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:744">
                     <div className="h-[28px] relative shrink-0 w-[96px]" data-name="Container" data-node-id="11:745">
                         <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
                             <p className="absolute font-['Museo_Sans:700',sans-serif] leading-[28px] left-0 not-italic text-[#f68d6f] text-[18px] top-0" data-node-id="11:746">
@@ -130,7 +130,7 @@ export default function Agenda() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#f2e7d1] content-stretch flex gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:753">
+                <div className="bg-[#f2e7d1] content-stretch flex gap-4 md:gap-[24px] h-auto min-h-[108px] items-start pt-[24px] px-4 md:px-[24px] pb-[24px] relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:753">
                     <div className="h-[28px] relative shrink-0 w-[96px]" data-name="Container" data-node-id="11:754">
                         <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
                             <p className="absolute font-['Museo_Sans:700',sans-serif] leading-[28px] left-0 not-italic text-[#1c3d42] text-[18px] top-0" data-node-id="11:755">
@@ -153,7 +153,7 @@ export default function Agenda() {
                     </div>
                 </div>
             </div>
-            <button className="border-2 border-[#3ea0ab] border-solid content-stretch flex h-[54px] items-center justify-center px-[43px] py-[17px] relative rounded-[4px] shrink-0 w-[329px] cursor-pointer hover:bg-[#3ea0ab]/10 transition-colors" data-name="Button" data-node-id="16:5">
+            <button className="border-2 border-[#3ea0ab] border-solid content-stretch flex h-[54px] items-center justify-center px-[43px] py-[17px] relative rounded-[4px] shrink-0 w-full max-w-xs cursor-pointer hover:bg-[#3ea0ab]/10 transition-colors" data-name="Button" data-node-id="16:5">
                 <p className="font-['Transducer_Test:Bold',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#3ea0ab] text-[14px] text-center tracking-[1px] uppercase" data-node-id="16:6">
                     VIEW EVENT AGENDA
                 </p>

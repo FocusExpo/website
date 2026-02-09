@@ -6,9 +6,9 @@ const imgGroup2 = "/assets/imgGroup2.svg";
 
 export default function Hero() {
     return (
-        <div className="bg-[#1c3d42] content-stretch flex gap-[90px] h-[1080px] items-center justify-center overflow-clip py-[200px] relative shrink-0 w-full" data-name="1_Section_Hero" data-node-id="4:419">
-            <div className="absolute h-[1196.59px] left-[-119px] top-[-51px] w-[2051.3px]" data-name="Layer_10" data-node-id="5:5">
-                <img alt="" className="block max-w-none size-full" src={imgLayer10} />
+        <div className="bg-[#1c3d42] content-stretch flex flex-col gap-[40px] md:gap-[90px] min-h-screen items-center justify-center overflow-hidden py-[100px] md:py-[200px] relative shrink-0 w-full" data-name="1_Section_Hero" data-node-id="4:419">
+            <div className="absolute h-full w-full left-0 top-0 overflow-hidden pointer-events-none fade-in" data-name="Layer_10" data-node-id="5:5">
+                <img alt="" className="block w-full h-full object-cover opacity-30" src={imgLayer10} />
             </div>
             <div className="content-stretch flex flex-col gap-[64px] items-center justify-center relative shrink-0" data-node-id="16:3">
                 <div className="content-stretch flex gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
@@ -25,9 +25,9 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className="content-stretch flex flex-col gap-[34px] items-start relative shrink-0" data-node-id="7:119">
-                        <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0" data-node-id="7:121">
-                            <div className="content-stretch flex flex-col font-['Transducer_Test:Regular',sans-serif] items-start leading-[79.2px] not-italic relative shrink-0 text-[72px] tracking-[-1.8px] w-[950px]" data-name="Heading 1" data-node-id="4:525">
+                    <div className="content-stretch flex flex-col gap-[34px] items-center md:items-start relative shrink-0 max-w-full px-4" data-node-id="7:119">
+                        <div className="content-stretch flex flex-col gap-[24px] items-center md:items-start relative shrink-0 w-full" data-node-id="7:121">
+                            <div className="content-stretch flex flex-col font-['Transducer_Test:Regular',sans-serif] items-center md:items-start leading-tight not-italic relative shrink-0 text-4xl md:text-[72px] tracking-[-1px] md:tracking-[-1.8px] w-full max-w-4xl text-center md:text-left" data-name="Heading 1" data-node-id="4:525">
                                 <p className="relative shrink-0 text-[#f2e7d1]" data-node-id="4:526">
                                     Aligning Direction.
                                 </p>
@@ -50,14 +50,14 @@ export default function Hero() {
                         <div className="absolute content-stretch flex flex-col items-start justify-center left-0 overflow-clip top-0" data-name="Paragraph" data-node-id="7:109" />
                     </div>
                 </div>
-                <div className="content-stretch flex flex-col gap-[8px] items-center justify-center relative shrink-0" data-node-id="7:120">
-                    <div className="content-stretch flex items-center justify-center relative rounded-[4px] shrink-0 w-[474px]" data-node-id="11:604">
-                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] h-[49px] justify-center leading-[0] not-italic relative shrink-0 text-[#3ea0ab] text-[24px] text-center w-[474px]" data-node-id="4:532">
-                            <p className="leading-[32.5px] whitespace-pre-wrap">April 4, 2026 | Allen, TX</p>
+                <div className="content-stretch flex flex-col gap-[24px] items-center justify-center relative shrink-0 w-full px-4" data-node-id="7:120">
+                    <div className="content-stretch flex items-center justify-center relative rounded-[4px] shrink-0 w-full max-w-md" data-node-id="11:604">
+                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-[#3ea0ab] text-xl md:text-[24px] text-center w-full" data-node-id="4:532">
+                            <p className="whitespace-pre-wrap">April 4, 2026 | Allen, TX</p>
                         </div>
                     </div>
-                    <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-[474px]" data-name="Container" data-node-id="4:533">
-                        <button className="bg-[#3ea0ab] flex-[1_0_0] min-h-px min-w-px relative rounded-[4px] cursor-pointer hover:bg-[#2d7a83] transition-colors" data-name="Button" data-node-id="4:534">
+                    <div className="content-stretch flex flex-col md:flex-row gap-[16px] items-center relative shrink-0 w-full max-w-md" data-name="Container" data-node-id="4:533">
+                        <button className="bg-[#3ea0ab] flex-[1_0_0] relative rounded-[4px] cursor-pointer hover:bg-[#2d7a83] transition-colors w-full md:w-auto" data-name="Button" data-node-id="4:534">
                             <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[39px] py-[15px] relative w-full">
                                 <p className="font-['Transducer_Test:Bold',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#1c3d42] text-[14px] text-center tracking-[1px] uppercase" data-node-id="4:535">
                                     Sign Up Now

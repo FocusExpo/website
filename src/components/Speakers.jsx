@@ -23,7 +23,7 @@ export default function Speakers() {
                 <div className="flex flex-col gap-[16px] items-start relative w-full" data-name="Container" data-node-id="11:634">
                     <div className="border-2 border-[#3ea0ab] border-solid flex flex-col h-[296px] items-start overflow-clip relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:635">
                         <div className="h-[296px] relative shrink-0 w-full" data-name="ImageWithFallback" data-node-id="11:636">
-                            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImageWithFallback} />
+                            <img alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none" src={imgImageWithFallback} />
                         </div>
                     </div>
                     <div className="h-[28px] relative shrink-0 w-full" data-name="Heading 3" data-node-id="11:637">
@@ -38,7 +38,7 @@ export default function Speakers() {
                 <div className="flex flex-col gap-[16px] items-start relative w-full" data-name="Container" data-node-id="11:641">
                     <div className="border-2 border-[#3ea0ab] border-solid flex flex-col h-[296px] items-start overflow-clip relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:642">
                         <div className="h-[296px] relative shrink-0 w-full" data-name="ImageWithFallback" data-node-id="11:643">
-                            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImageWithFallback1} />
+                            <img alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none" src={imgImageWithFallback1} />
                         </div>
                     </div>
                     <div className="h-[28px] relative shrink-0 w-full" data-name="Heading 3" data-node-id="11:644">
@@ -55,7 +55,7 @@ export default function Speakers() {
                 <div className="flex flex-col gap-[16px] items-start relative w-full" data-name="Container" data-node-id="11:648">
                     <div className="border-2 border-[#3ea0ab] border-solid flex flex-col h-[296px] items-start overflow-clip relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:649">
                         <div className="h-[296px] relative shrink-0 w-full" data-name="ImageWithFallback" data-node-id="11:650">
-                            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImageWithFallback2} />
+                            <img alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none" src={imgImageWithFallback2} />
                         </div>
                     </div>
                     <div className="h-[28px] relative shrink-0 w-full" data-name="Heading 3" data-node-id="11:651">
@@ -70,7 +70,7 @@ export default function Speakers() {
                 <div className="flex flex-col gap-[16px] items-start relative w-full" data-name="Container" data-node-id="11:655">
                     <div className="border-2 border-[#3ea0ab] border-solid flex flex-col h-[296px] items-start overflow-clip relative rounded-[6px] shrink-0 w-full" data-name="Container" data-node-id="11:656">
                         <div className="border-2 border-[#3ea0ab] border-solid h-[296px] relative shrink-0 w-full" data-name="ImageWithFallback" data-node-id="11:657">
-                            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImageWithFallback3} />
+                            <img alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none" src={imgImageWithFallback3} />
                         </div>
                     </div>
                     <div className="h-[28px] relative shrink-0 w-full" data-name="Heading 3" data-node-id="11:658">
@@ -83,7 +83,7 @@ export default function Speakers() {
                     </div>
                 </div>
             </div>
-            <button className="border-2 border-[#3ea0ab] border-solid content-stretch flex h-[54px] items-center justify-center px-[43px] py-[17px] relative rounded-[4px] shrink-0 w-[329px] cursor-pointer hover:bg-[#3ea0ab]/10 transition-colors" data-name="Button" data-node-id="11:803">
+            <button className="border-2 border-[#3ea0ab] border-solid content-stretch flex h-[54px] items-center justify-center px-[43px] py-[17px] relative rounded-[4px] shrink-0 w-full max-w-xs cursor-pointer hover:bg-[#3ea0ab]/10 transition-colors" data-name="Button" data-node-id="11:803">
                 <p className="font-['Transducer_Test:Bold',sans-serif] leading-[24px] not-italic relative shrink-0 text-[#3ea0ab] text-[14px] text-center tracking-[1px] uppercase" data-node-id="11:804">
                     VIEW FULL SPEAKER LINEUP
                 </p>
