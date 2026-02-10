@@ -15,15 +15,15 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-8">
-                                <a href="#about" className="text-white hover:text-[#3ea0ab] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">About</a>
-                                <a href="#speakers" className="text-white hover:text-[#3ea0ab] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">Speakers</a>
-                                <a href="#agenda" className="text-white hover:text-[#3ea0ab] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">Agenda</a>
-                                <a href="#location" className="text-white hover:text-[#3ea0ab] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">Location</a>
-                                <a href="#faq" className="text-white hover:text-[#3ea0ab] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">FAQ</a>
+                                <a href="#about" className="text-[#3EA0AB] hover:text-[#dd664e] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">About</a>
+                                <a href="#speakers" className="text-[#3EA0AB] hover:text-[#dd664e] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">Speakers</a>
+                                <a href="#agenda" className="text-[#3EA0AB] hover:text-[#dd664e] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">Agenda</a>
+                                <a href="#location" className="text-[#3EA0AB] hover:text-[#dd664e] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">Location</a>
+                                <a href="#faq" className="text-[#3EA0AB] hover:text-[#dd664e] px-3 py-2 rounded-md text-sm font-medium transition-colors uppercase tracking-wide">FAQ</a>
                             </div>
                         </div>
                         <div className="hidden md:block">
-                            <button className="bg-[#3ea0ab] text-[#1c3d42] px-6 py-2.5 rounded-[4px] font-bold text-sm hover:bg-[#2d7a83] transition-colors uppercase tracking-wide">
+                            <button className="bg-white text-[#025054] px-6 py-2.5 rounded-[4px] font-bold text-sm hover:bg-gray-100 transition-colors uppercase tracking-wide shadow-md">
                                 Sign Up Now
                             </button>
                         </div>
@@ -63,7 +63,7 @@ export default function Navbar() {
                         <a href="#location" onClick={() => setIsOpen(false)} className="text-[#3EA0AB] hover:text-[#dd664e] text-2xl font-bold uppercase tracking-wide transition-colors border-b border-[#3ea0ab]/10 pb-4">Location</a>
                         <a href="#faq" onClick={() => setIsOpen(false)} className="text-[#3EA0AB] hover:text-[#dd664e] text-2xl font-bold uppercase tracking-wide transition-colors border-b border-[#3ea0ab]/10 pb-4">FAQ</a>
 
-                        <button className="w-full mt-4 bg-[#3ea0ab] text-[#1c3d42] px-6 py-4 rounded-[4px] font-bold text-lg hover:bg-[#2d7a83] transition-colors uppercase tracking-wide shadow-lg">
+                        <button className="w-full mt-4 bg-white text-[#025054] px-6 py-4 rounded-[4px] font-bold text-lg hover:bg-gray-100 transition-colors uppercase tracking-wide shadow-lg">
                             Sign Up Now
                         </button>
                     </div>
