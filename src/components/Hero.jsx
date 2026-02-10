@@ -4,6 +4,8 @@ const imgGroup = "/assets/imgGroup.svg";
 const imgGroup1 = "/assets/imgGroup1.svg";
 const imgGroup2 = "/assets/imgGroup2.svg";
 
+import ShinyText from './ShinyText';
+
 export default function Hero() {
     return (
         <div className="bg-[#1c3d42] content-stretch flex flex-col gap-[40px] md:gap-[90px] min-h-screen items-center justify-center overflow-hidden py-[100px] md:py-[200px] relative shrink-0 w-full" data-name="1_Section_Hero" data-node-id="4:419">
@@ -28,12 +30,12 @@ export default function Hero() {
                             <div className="content-stretch flex flex-col items-start justify-center overflow-clip relative shrink-0" data-name="Paragraph" data-node-id="4:529">
                                 <p className="font-['Museo_Sans:500',sans-serif] leading-[0] not-italic relative shrink-0 text-[#f2e7d1] text-[20px] text-center" data-node-id="4:530">
                                     <span className="leading-[32.5px]">{`A professional intersection of `}</span>
-                                    <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#3ea0ab]">Islamic values</span>
+                                    <ShinyText text="Islamic values" disabled={false} speed={3} className="font-['Museo_Sans:900',sans-serif] leading-[32.5px]" color="#3ea0ab" shineColor="#ffffff" />
                                     <span className="leading-[32.5px]">,</span>
                                     <span className="leading-[32.5px] text-[#3ea0ab]">{` `}</span>
-                                    <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#A83F3F]">mental wellness</span>
+                                    <ShinyText text="mental wellness" disabled={false} speed={3} className="font-['Museo_Sans:900',sans-serif] leading-[32.5px]" color="#A83F3F" shineColor="#ffffff" />
                                     <span className="leading-[32.5px]">{`, and `}</span>
-                                    <span className="font-['Museo_Sans:900',sans-serif] leading-[32.5px] text-[#dd664e]">financial growth.</span>
+                                    <ShinyText text="financial growth." disabled={false} speed={3} className="font-['Museo_Sans:900',sans-serif] leading-[32.5px]" color="#dd664e" shineColor="#ffffff" />
                                 </p>
                             </div>
                         </div>
