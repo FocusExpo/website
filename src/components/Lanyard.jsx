@@ -1,14 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useRef, useState } from 'react';
 import { Canvas, extend, useFrame } from '@react-three/fiber';
-import { useGLTF, useTexture, Environment, Lightformer } from '@react-three/drei';
+import { useTexture, Environment, Lightformer } from '@react-three/drei';
 import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphericalJoint } from '@react-three/rapier';
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 import * as THREE from 'three';
 import './Lanyard.css';
-
-// Default assets
-const cardGLBDefault = 'https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5hu54v2PV7CSyCQipUwgCW/74f21fea9527e5f0a8d5e30503e45514/card.glb';
 
 extend({ MeshLineGeometry, MeshLineMaterial });
 
@@ -32,6 +29,7 @@ export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], 
                 onCreated={({ gl }) => gl.setClearColor(new THREE.Color(0x000000), transparent ? 0 : 1)}
             >
                 <ambientLight intensity={Math.PI} />
+                {/* Added suspense fallback implicitly via R3F? Or just standard loading. No Suspense needed for basic mesh */}
                 <Physics gravity={gravity} timeStep={1 / 60}>
                     <Band />
                 </Physics>
@@ -82,8 +80,6 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
         rot = new THREE.Vector3(),
         dir = new THREE.Vector3();
     const segmentProps = { type: 'dynamic', canSleep: true, colliders: false, angularDamping: 4, linearDamping: 4 };
-
-    const { nodes, materials } = useGLTF(cardGLBDefault);
 
     // Load custom textures
     // Strap texture (Watermark)
@@ -175,18 +171,23 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
                             drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())))
                         )}
                     >
-                        <mesh geometry={nodes.card.geometry}>
+                        {/* Custom Simple Card Geometry instead of GLB */}
+                        <mesh>
+                            {/* Dimensions roughly matching the GLB scale */}
+                            <boxGeometry args={[0.7, 1, 0.02]} />
                             <meshPhysicalMaterial
                                 map={cardTexture}
-                                map-anisotropy={16}
                                 clearcoat={1}
                                 clearcoatRoughness={0.15}
                                 roughness={0.3}
                                 metalness={0.5}
                             />
                         </mesh>
-                        <mesh geometry={nodes.clip.geometry} material={materials.metal} material-roughness={0.3} />
-                        <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
+                        {/* Optional: Simple Clip/Holder */}
+                        <mesh position={[0, 0.55, 0]}>
+                            <boxGeometry args={[0.3, 0.1, 0.04]} />
+                            <meshStandardMaterial color="#888888" metalness={0.8} roughness={0.2} />
+                        </mesh>
                     </group>
                 </RigidBody>
             </group>
