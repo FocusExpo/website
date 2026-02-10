@@ -19,7 +19,7 @@ export default function CTA() {
                 </p>
             </div>
             <button className="bg-white px-[48px] py-[20px] rounded-[4px] shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 group border-2 border-white">
-                <p className="font-['Transducer_Test:Bold',sans-serif] text-[18px] text-center text-[#1c3d42] tracking-[2px] uppercase group-hover:tracking-[3px] transition-all">
+                <p className="font-['Transducer_Test:Bold',sans-serif] text-[18px] text-center text-[#025054] tracking-[2px] uppercase group-hover:tracking-[3px] transition-all">
                     SIGN UP FOR EARLY BIRD
                 </p>
             </button>
