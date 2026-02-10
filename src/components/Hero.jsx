@@ -12,7 +12,7 @@ export default function Hero() {
             </div>
             <div className="content-stretch flex flex-col gap-[30px] items-center justify-center relative shrink-0" data-node-id="16:3">
                 <div className="content-stretch flex flex-col md:flex-row gap-[32px] items-center justify-center relative shrink-0" data-name="Container" data-node-id="4:522">
-                    <div className="content-stretch flex gap-[20px] items-center overflow-clip px-[40px] py-[20px] relative shrink-0" data-name="Layer_10" data-node-id="5:9">
+                    <div className="content-stretch flex gap-[20px] items-center overflow-clip px-[40px] py-[20px] relative shrink-0 max-w-full" data-name="Layer_10" data-node-id="5:9">
                         <div className="h-[199.192px] relative shrink-0 w-[199.186px]" data-name="Group" data-node-id="5:10">
                             <img alt="" className="block max-w-none size-full" src={imgGroup} />
                         </div>
@@ -27,11 +27,11 @@ export default function Hero() {
                     </div>
                     <div className="content-stretch flex flex-col gap-[34px] items-center md:items-start relative shrink-0 max-w-full px-4" data-node-id="7:119">
                         <div className="content-stretch flex flex-col gap-[24px] items-center md:items-start relative shrink-0 w-full" data-node-id="7:121">
-                            <div className="content-stretch flex flex-col font-['Transducer_Test:Regular',sans-serif] items-center md:items-start leading-tight not-italic relative shrink-0 text-4xl md:text-[72px] tracking-[-1px] md:tracking-[-1.8px] w-full max-w-4xl text-center md:text-left" data-name="Heading 1" data-node-id="4:525">
-                                <p className="relative shrink-0 text-[#f2e7d1]" data-node-id="4:526">
+                            <div className="content-stretch flex flex-col font-['Transducer_Test:Regular',sans-serif] items-center md:items-start leading-tight not-italic relative shrink-0 text-4xl md:text-[72px] tracking-[-1px] md:tracking-[-1.8px] w-full max-w-full md:max-w-4xl text-center md:text-left break-words" data-name="Heading 1" data-node-id="4:525">
+                                <p className="relative shrink-0 text-[#f2e7d1] max-w-full" data-node-id="4:526">
                                     Aligning Direction.
                                 </p>
-                                <p className="relative shrink-0 text-[#3ea0ab]" data-node-id="4:527">
+                                <p className="relative shrink-0 text-[#3ea0ab] max-w-full" data-node-id="4:527">
                                     Through The Lens of Faith
                                 </p>
                             </div>

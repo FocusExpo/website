@@ -41,7 +41,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Overlay - High Z-Index to cover everything */}
             {isOpen && (
-                <div className="fixed inset-0 z-[100] bg-[#1c3d42] md:hidden flex flex-col">
+                <div className="fixed inset-0 z-[9999] bg-[#1c3d42] md:hidden flex flex-col h-[100dvh] w-screen overflow-hidden">
                     {/* Header inside Menu for continuity */}
                     <div className="flex items-center justify-between h-20 px-4 sm:px-6 border-b border-[#3ea0ab]/20 shrink-0">
                         <div className="flex-shrink-0 cursor-pointer w-10 h-10" onClick={() => { setIsOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
