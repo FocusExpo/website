@@ -23,7 +23,7 @@ export default function Footer() {
                         <span className="text-white font-bold text-2xl tracking-wider">FOCUS</span>
                     </div>
                     <p className="font-['Museo_Sans:500',sans-serif] text-[#e5e5e3] text-sm leading-relaxed max-w-xs">
-                        Aligning direction through the lens of faith. A professional intersection for Muslim leaders.
+                        Aligning direction through the lens of faith. A professional intersection of Islamic values, mental wellness, and financial growth for Muslim leaders.
                     </p>
                 </div>
 
@@ -47,7 +47,7 @@ export default function Footer() {
                         Contact Us
                     </h4>
                     <p className="font-['Museo_Sans:500',sans-serif] text-[#e5e5e3] text-sm">
-                        info@focusexpo.com
+                        focussocialmedia0@gmail.com
                     </p>
                     {/* Social Icons could go here */}
                 </div>

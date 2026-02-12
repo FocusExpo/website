@@ -2,7 +2,7 @@ import Lanyard from './Lanyard';
 
 export default function CTA() {
     return (
-        <div className="bg-[#f2e7d1] flex flex-col gap-[32px] items-center py-[96px] relative shrink-0 w-full overflow-hidden" data-name="9_Section_CTA" data-node-id="4:611">
+        <div className="bg-[#f2e7d1] flex flex-col gap-[32px] items-center pb-[96px] relative shrink-0 w-full overflow-hidden" data-name="9_Section_CTA" data-node-id="4:611">
             <div className="hidden md:block w-full h-[400px] -mb-32 relative z-10 pointer-events-none">
                 <Lanyard position={[0, -5, 20]} gravity={[0, -40, 0]} />
             </div>
@@ -23,11 +23,11 @@ export default function CTA() {
                     Early Bird tickets are now available. Join the community that is redefining professional success.
                 </p>
             </div>
-            <button className="bg-white px-[48px] py-[20px] rounded-[4px] shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 group border-2 border-white">
+            <a href="https://luma.com/64o45o5x" className="bg-white px-[48px] py-[20px] rounded-[4px] shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 group border-2 border-white block text-decoration-none">
                 <p className="font-['Transducer_Test:Bold',sans-serif] text-[18px] text-center text-[#025054] tracking-[2px] uppercase group-hover:tracking-[3px] transition-all">
                     SIGN UP FOR EARLY BIRD
                 </p>
-            </button>
+            </a>
         </div>
     );
 }

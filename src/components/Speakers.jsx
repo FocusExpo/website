@@ -103,11 +103,7 @@ export default function Speakers() {
                 </div>
             </div>
 
-            <button className="bg-white border-2 border-white px-8 py-4 rounded-[4px] cursor-pointer hover:bg-gray-100 transition-colors w-full max-w-xs group shadow-md">
-                <p className="font-['Transducer_Test:Bold',sans-serif] text-[#025054] text-sm tracking-[1px] uppercase group-hover:tracking-[2px] transition-all duration-300">
-                    VIEW FULL SPEAKER LINEUP
-                </p>
-            </button>
+
         </div>
     );
 }
