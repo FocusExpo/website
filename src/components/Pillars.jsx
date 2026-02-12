@@ -49,7 +49,7 @@ export default function Pillars() {
 
     return (
         <div id="pillars" className="bg-[#faf7f2] flex flex-col items-center justify-center py-20 relative w-full overflow-hidden">
-            <div className="container mx-auto px-4 flex flex-col gap-8 items-center w-full">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 flex flex-col gap-8 items-center w-full">
                 <div className="text-center max-w-2xl">
                     <p className="font-['Museo_Sans:700',sans-serif] text-[#6bb5c1] text-sm tracking-[3.5px] uppercase mb-4">
                         What focus stands for

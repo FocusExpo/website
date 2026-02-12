@@ -45,7 +45,7 @@ export default function Speakers() {
 
     return (
         <div id="speakers" className="bg-[#f2e7d1] flex flex-col gap-16 items-center py-24 w-full overflow-hidden">
-            <div className="container mx-auto px-4 flex flex-col gap-4 items-center w-full">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 flex flex-col gap-4 items-center w-full">
                 <p className="font-['Museo_Sans:700',sans-serif] text-[#52a0ad] text-sm tracking-[3.5px] uppercase text-center">
                     Learn From The Best
                 </p>

@@ -6,7 +6,7 @@ const imgGroup4 = "/assets/imgGroup4.svg";
 
 export default function Footer() {
     return (
-        <div className="bg-[#1c3d42] flex flex-col gap-12 items-center pb-12 pt-16 px-4 relative w-full overflow-hidden">
+        <div className="bg-[#1c3d42] flex flex-col gap-12 items-center pb-12 pt-16 px-4 sm:px-6 md:px-12 lg:px-24 relative w-full overflow-hidden">
             {/* Background Texture */}
             <div className="absolute inset-0 pointer-events-none">
                 <img alt="" className="w-full h-full object-cover opacity-50" src={imgLayer12} />

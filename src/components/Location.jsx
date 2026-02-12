@@ -4,7 +4,7 @@ const imgLayer11 = "/assets/imgLayer11.svg";
 
 export default function Location() {
     return (
-        <div id="location" className="bg-[#1c3d42] flex flex-col gap-16 min-h-[800px] items-center py-24 px-4 relative w-full overflow-hidden">
+        <div id="location" className="bg-[#1c3d42] flex flex-col gap-16 min-h-[800px] items-center py-24 px-4 sm:px-6 md:px-12 lg:px-24 relative w-full overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 pointer-events-none">
                 <img alt="" className="w-full h-full object-cover opacity-50" src={imgLayer11} />

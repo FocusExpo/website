@@ -41,7 +41,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row gap-12 items-center justify-center relative shrink-0 w-full mb-16"
+                className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl flex flex-col md:flex-row gap-12 items-center justify-center relative shrink-0 w-full mb-16"
                 data-name="AboutSection"
                 data-node-id="4:538"
             >

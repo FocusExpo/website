@@ -32,7 +32,7 @@ export default function FAQ() {
 
     return (
         <div id="faq" className="bg-[#faf7f2] flex flex-col items-center py-24 relative shrink-0 w-full" data-name="8_Section_FAQ" data-node-id="11:766">
-            <div className="container mx-auto px-4 max-w-4xl flex flex-col gap-4 items-center relative shrink-0 w-full mb-12" data-name="Container" data-node-id="17:26">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-4xl flex flex-col gap-4 items-center relative shrink-0 w-full mb-12" data-name="Container" data-node-id="17:26">
                 <div className="flex items-center justify-center relative shrink-0 w-full" data-name="Container" data-node-id="17:27">
                     <p className="font-['Museo_Sans:700',sans-serif] leading-[20px] not-italic relative shrink-0 text-[#e47159] text-[14px] text-center tracking-[3.5px] uppercase" data-node-id="17:28">
                         Frequently Asked Questions
@@ -44,7 +44,7 @@ export default function FAQ() {
                     </p>
                 </div>
             </div>
-            <div className="container mx-auto px-4 max-w-4xl flex flex-col gap-4 relative shrink-0 w-full" data-name="Container" data-node-id="11:769">
+            <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-4xl flex flex-col gap-4 relative shrink-0 w-full" data-name="Container" data-node-id="11:769">
                 <div className="space-y-1 w-full">
                     {faqs.map((faq, index) => (
                         <details key={index} className="group [&_summary::-webkit-details-marker]:hidden bg-white border border-gray-200 rounded-lg overflow-hidden">
