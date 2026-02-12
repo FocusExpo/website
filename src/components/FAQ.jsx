@@ -46,7 +46,7 @@ export default function FAQ() {
             </div>
             <div className="container mx-auto px-4 max-w-4xl flex flex-col gap-4 relative shrink-0 w-full" data-name="Container" data-node-id="11:769">
                 {faqs.map((faq, index) => (
-                    <div key={index} className="bg-[#f2e7d1] border-2 border-[#e8e8e8] border-solid flex flex-col items-start overflow-hidden rounded-[6px] shrink-0 w-full transition-all duration-300" data-name="Container">
+                    <div key={index} className="bg-white border-2 border-[#e8e8e8] border-solid flex flex-col items-start overflow-hidden rounded-[6px] shrink-0 w-full transition-all duration-300" data-name="Container">
                         <button
                             onClick={() => toggleFAQ(index)}
                             className="flex items-center justify-between w-full h-[80px] px-6 text-left focus:outline-none hover:bg-black/5 transition-colors"
