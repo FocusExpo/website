@@ -100,18 +100,20 @@
 }
 
 .card-nav-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 60px;
-    bottom: 0;
+    /* Position relative to flow naturally in the auto-height container */
+    /* position: absolute;  <-- Removed */
+    /* top: 60px;          <-- Removed */
+    /* bottom: 0;          <-- Removed */
+    width: 100%;
     padding: 0.5rem;
     display: flex;
     align-items: flex-end;
     gap: 12px;
-    visibility: hidden;
-    pointer-events: none;
+    /* visibility: hidden; <-- Managed by React/Framer now */
+    /* pointer-events: none; <-- Managed by React/Framer now */
     z-index: 1;
+    min-height: 200px;
+    /* Ensure some height for desktop cards */
 }
 
 .card-nav.open .card-nav-content {
@@ -196,8 +198,10 @@
         align-items: stretch;
         gap: 8px;
         padding: 0.5rem;
-        bottom: 0;
+        /* bottom: 0; <-- Removed */
         justify-content: flex-start;
+        min-height: auto;
+        /* Allow auto height on mobile */
     }
 
     .nav-card {

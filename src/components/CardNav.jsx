@@ -1,6 +1,5 @@
-
-import { useLayoutEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
+import { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { GoArrowUpRight } from 'react-icons/go';
 import './CardNav.css';
 
@@ -9,145 +8,51 @@ const CardNav = ({
     logoAlt = 'Logo',
     items,
     className = '',
-    ease = 'power3.out',
     baseColor = '#fff',
     menuColor,
     buttonBgColor,
     buttonTextColor
 }) => {
-    const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
     const navRef = useRef(null);
-    const cardsRef = useRef([]);
-    const tlRef = useRef(null);
 
-    const calculateHeight = () => {
-        const navEl = navRef.current;
-        if (!navEl) return 260;
-
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
-        if (isMobile) {
-            const contentEl = navEl.querySelector('.card-nav-content');
-            if (contentEl) {
-                const wasVisible = contentEl.style.visibility;
-                const wasPointerEvents = contentEl.style.pointerEvents;
-                const wasPosition = contentEl.style.position;
-                const wasHeight = contentEl.style.height;
-
-                contentEl.style.visibility = 'visible';
-                contentEl.style.pointerEvents = 'auto';
-                contentEl.style.position = 'static';
-                contentEl.style.height = 'auto';
-
-                contentEl.offsetHeight;
-
-                const topBar = 60;
-                const padding = 16;
-                const contentHeight = contentEl.scrollHeight;
-
-                contentEl.style.visibility = wasVisible;
-                contentEl.style.pointerEvents = wasPointerEvents;
-                contentEl.style.position = wasPosition;
-                contentEl.style.height = wasHeight;
-
-                return topBar + contentHeight + padding;
-            }
-        }
-        return 260;
-    };
-
-    const createTimeline = () => {
-        const navEl = navRef.current;
-        if (!navEl) return null;
-
-        gsap.set(navEl, { height: 60, overflow: 'hidden' });
-        gsap.set(cardsRef.current, { y: 50, opacity: 0 });
-
-        const tl = gsap.timeline({ paused: true });
-
-        tl.to(navEl, {
-            height: calculateHeight,
-            duration: 0.4,
-            ease
-        });
-
-        tl.to(cardsRef.current, { y: 0, opacity: 1, duration: 0.4, ease, stagger: 0.08 }, '-=0.1');
-
-        return tl;
-    };
-
-    useLayoutEffect(() => {
-        const tl = createTimeline();
-        tlRef.current = tl;
-
-        return () => {
-            tl?.kill();
-            tlRef.current = null;
-        };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [ease, items]);
-
-    useLayoutEffect(() => {
-        const handleResize = () => {
-            if (!tlRef.current) return;
-
-            if (isExpanded) {
-                const newHeight = calculateHeight();
-                gsap.set(navRef.current, { height: newHeight });
-
-                tlRef.current.kill();
-                const newTl = createTimeline();
-                if (newTl) {
-                    newTl.progress(1);
-                    tlRef.current = newTl;
-                }
-            } else {
-                tlRef.current.kill();
-                const newTl = createTimeline();
-                if (newTl) {
-                    tlRef.current = newTl;
-                }
-            }
-        };
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isExpanded]);
+    // Calculate height for animation - simplified for framer motion "auto"
+    // Framer motion handles height: "auto" beautifully, so we might not need explicit calculation logic like GSAP
 
     const toggleMenu = () => {
-        const tl = tlRef.current;
-        if (!tl) return;
-        if (!isExpanded) {
-            setIsHamburgerOpen(true);
-            setIsExpanded(true);
-            tl.play(0);
-        } else {
-            setIsHamburgerOpen(false);
-            tl.eventCallback('onReverseComplete', () => setIsExpanded(false));
-            tl.reverse();
-        }
-    };
-
-    const setCardRef = i => el => {
-        if (el) cardsRef.current[i] = el;
+        setIsExpanded(!isExpanded);
     };
 
     return (
         <div className={`card-nav-container ${className}`}>
-            <nav ref={navRef} className={`card-nav ${isExpanded ? 'open' : ''}`} style={{ backgroundColor: baseColor }}>
+            <motion.nav
+                ref={navRef}
+                className={`card-nav ${isExpanded ? 'open' : ''}`}
+                style={{ backgroundColor: baseColor, overflow: 'hidden' }}
+                initial={false}
+                animate={{
+                    height: isExpanded ? 'auto' : 60,
+                    transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } // Power3.out approx
+                }}
+            >
                 <div className="card-nav-top">
                     {/* Hamburger - Left side */}
                     <div
-                        className={`hamburger-menu ${isHamburgerOpen ? 'open' : ''}`}
+                        className={`hamburger-menu ${isExpanded ? 'open' : ''}`}
                         onClick={toggleMenu}
                         role="button"
                         aria-label={isExpanded ? 'Close menu' : 'Open menu'}
                         tabIndex={0}
                         style={{ color: menuColor || '#000' }}
                     >
-                        <div className="hamburger-line" />
-                        <div className="hamburger-line" />
+                        <motion.div
+                            className="hamburger-line"
+                            animate={{ rotate: isExpanded ? 45 : 0, y: isExpanded ? 4 : 0 }}
+                        />
+                        <motion.div
+                            className="hamburger-line"
+                            animate={{ rotate: isExpanded ? -45 : 0, y: isExpanded ? -4 : 0 }}
+                        />
                     </div>
 
                     <div className="logo-container">
@@ -164,34 +69,48 @@ const CardNav = ({
                     </a>
                 </div>
 
-                <div className="card-nav-content" aria-hidden={!isExpanded}>
-                    {(items || []).slice(0, 3).map((item, idx) => (
-                        <div
-                            key={`${item.label}-${idx}`}
-                            className="nav-card"
-                            ref={setCardRef(idx)}
-                            style={{ backgroundColor: item.bgColor, color: item.textColor }}
+                <AnimatePresence>
+                    {isExpanded && (
+                        <motion.div
+                            className="card-nav-content"
+                            aria-hidden={!isExpanded}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1, transition: { duration: 0.3, delay: 0.1 } }}
+                            exit={{ opacity: 0, transition: { duration: 0.2 } }}
+                            style={{ visibility: 'visible', pointerEvents: 'auto', position: 'relative', top: 0 }} // Override CSS positioning for flow
                         >
-                            <div className="nav-card-label">{item.label}</div>
-                            <div className="nav-card-links">
-                                {item.links?.map((lnk, i) => (
-                                    <a
-                                        key={`${lnk.label}-${i}`}
-                                        className="nav-card-link"
-                                        href={lnk.href}
-                                        target={lnk.href.startsWith('#') ? undefined : "_blank"}
-                                        rel={lnk.href.startsWith('#') ? undefined : "noopener noreferrer"}
-                                        aria-label={lnk.ariaLabel || lnk.label}
-                                    >
-                                        <GoArrowUpRight className="nav-card-link-icon" aria-hidden="true" />
-                                        {lnk.label}
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </nav>
+                            {(items || []).slice(0, 3).map((item, idx) => (
+                                <motion.div
+                                    key={`${item.label}-${idx}`}
+                                    className="nav-card"
+                                    style={{ backgroundColor: item.bgColor, color: item.textColor }}
+                                    initial={{ y: 20, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    exit={{ y: 10, opacity: 0 }}
+                                    transition={{ delay: 0.1 + (idx * 0.05), duration: 0.4 }}
+                                >
+                                    <div className="nav-card-label">{item.label}</div>
+                                    <div className="nav-card-links">
+                                        {item.links?.map((lnk, i) => (
+                                            <a
+                                                key={`${lnk.label}-${i}`}
+                                                className="nav-card-link"
+                                                href={lnk.href}
+                                                target={lnk.href.startsWith('#') ? undefined : "_blank"}
+                                                rel={lnk.href.startsWith('#') ? undefined : "noopener noreferrer"}
+                                                aria-label={lnk.ariaLabel || lnk.label}
+                                            >
+                                                <GoArrowUpRight className="nav-card-link-icon" aria-hidden="true" />
+                                                {lnk.label}
+                                            </a>
+                                        ))}
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </motion.nav>
         </div>
     );
 };
