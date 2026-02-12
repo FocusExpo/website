@@ -156,6 +156,7 @@ const CardNav = ({
 
                     <a
                         href="https://luma.com/64o45o5x"
+                        target="_blank" rel="noopener noreferrer"
                         className="card-nav-cta-button flex items-center justify-center no-underline"
                         style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
                     >
@@ -174,7 +175,7 @@ const CardNav = ({
                             <div className="nav-card-label">{item.label}</div>
                             <div className="nav-card-links">
                                 {item.links?.map((lnk, i) => (
-                                    <a key={`${lnk.label}-${i}`} className="nav-card-link" href={lnk.href} aria-label={lnk.ariaLabel || lnk.label}>
+                                    <a key={`${lnk.label}-${i}`} className="nav-card-link" href={lnk.href} target="_blank" rel="noopener noreferrer" aria-label={lnk.ariaLabel || lnk.label}>
                                         <GoArrowUpRight className="nav-card-link-icon" aria-hidden="true" />
                                         {lnk.label}
                                     </a>

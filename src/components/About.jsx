@@ -76,7 +76,7 @@ export default function About() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className={`${stat.bgColor} ${stat.borderColor} border-t-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow flex flex-col gap-2 items-center justify-center p-8 relative shrink-0 transform hover:-translate-y-1 duration-300`}
+                        className={`${stat.bgColor} ${stat.borderColor} border-t-8 rounded-lg shadow-xl flex flex-col gap-2 items-center justify-center p-8 relative shrink-0 transform hover:-translate-y-1 hover:scale-105 hover:shadow-[0_0_20px_rgba(82,160,173,0.5)] transition-all duration-300`}
                     >
                         <h3 className="font-['Inter:Bold',sans-serif] font-bold text-[#f2e7d1] text-5xl text-center flex items-center gap-1">
                             <CountUp

@@ -45,12 +45,12 @@ export default function Hero() {
                 </div>
                 <div className="content-stretch flex flex-col gap-[24px] items-center justify-center relative shrink-0 w-full px-4" data-node-id="7:120">
                     <div className="content-stretch flex items-center justify-center relative rounded-[4px] shrink-0 w-full" data-node-id="11:604">
-                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-[#3ea0ab] text-xl md:text-5xl text-center w-full" data-node-id="4:532">
+                        <div className="flex flex-col font-['Museo_Sans:900',sans-serif] justify-center leading-normal not-italic relative shrink-0 text-white text-xl md:text-5xl text-center w-full" data-node-id="4:532">
                             <p className="whitespace-nowrap">April 4, 2026 | Plano, TX</p>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-[16px] items-center justify-center relative shrink-0 w-full max-w-lg" data-name="Container" data-node-id="4:533">
-                        <a href="https://luma.com/64o45o5x" className="bg-white flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-gray-100 transition-colors border-2 border-white flex items-center justify-center shadow-lg text-decoration-none" data-name="Button" data-node-id="4:534">
+                        <a href="https://luma.com/64o45o5x" target="_blank" rel="noopener noreferrer" className="bg-white flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-gray-100 transition-colors border-2 border-white flex items-center justify-center shadow-lg text-decoration-none" data-name="Button" data-node-id="4:534">
                             <p className="font-['Transducer_Test:Bold',sans-serif] text-[#025054] text-[14px] text-center tracking-[1px] uppercase">
                                 Sign Up Now
                             </p>
