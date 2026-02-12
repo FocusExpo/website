@@ -175,7 +175,14 @@ const CardNav = ({
                             <div className="nav-card-label">{item.label}</div>
                             <div className="nav-card-links">
                                 {item.links?.map((lnk, i) => (
-                                    <a key={`${lnk.label}-${i}`} className="nav-card-link" href={lnk.href} target="_blank" rel="noopener noreferrer" aria-label={lnk.ariaLabel || lnk.label}>
+                                    <a
+                                        key={`${lnk.label}-${i}`}
+                                        className="nav-card-link"
+                                        href={lnk.href}
+                                        target={lnk.href.startsWith('#') ? undefined : "_blank"}
+                                        rel={lnk.href.startsWith('#') ? undefined : "noopener noreferrer"}
+                                        aria-label={lnk.ariaLabel || lnk.label}
+                                    >
                                         <GoArrowUpRight className="nav-card-link-icon" aria-hidden="true" />
                                         {lnk.label}
                                     </a>
