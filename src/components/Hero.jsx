@@ -5,6 +5,7 @@ const imgGroup1 = "/assets/imgGroup1.svg";
 const imgGroup2 = "/assets/imgGroup2.svg";
 
 import GradientText from './GradientText';
+import ShinyText from './ShinyText';
 
 export default function Hero() {
     return (
