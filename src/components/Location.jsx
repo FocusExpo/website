@@ -1,5 +1,5 @@
 
-const imgImage2 = "/assets/imgImage2.png";
+
 const imgLayer11 = "/assets/imgLayer11.svg";
 
 export default function Location() {

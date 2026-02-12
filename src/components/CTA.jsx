@@ -1,15 +1,20 @@
 import { lazy, Suspense } from 'react';
+import { useInView } from '../hooks/useInView';
 
 // Lazy load Lanyard
 const Lanyard = lazy(() => import('./Lanyard'));
 
 export default function CTA() {
+    const [ref, inView] = useInView({ triggerOnce: true, rootMargin: '200px' });
+
     return (
         <div className="bg-[#f2e7d1] flex flex-col gap-[32px] items-center pb-[96px] relative shrink-0 w-full overflow-hidden" data-name="9_Section_CTA" data-node-id="4:611">
-            <div className="hidden md:block w-full h-[400px] -mb-32 relative z-10 pointer-events-none">
-                <Suspense fallback={<div className="w-full h-full" />}>
-                    <Lanyard position={[0, -5, 20]} gravity={[0, -40, 0]} />
-                </Suspense>
+            <div ref={ref} className="hidden md:block w-full h-[400px] -mb-32 relative z-10 pointer-events-none">
+                {inView && (
+                    <Suspense fallback={<div className="w-full h-full" />}>
+                        <Lanyard position={[0, -5, 20]} gravity={[0, -40, 0]} />
+                    </Suspense>
+                )}
             </div>
             <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl flex flex-col gap-[16px] items-center relative shrink-0 w-full z-20" data-name="Container" data-node-id="12:818">
                 <div className="content-stretch flex flex-col items-center justify-center px-4 relative shrink-0 w-full" data-name="Container" data-node-id="12:819">
