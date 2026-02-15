@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GoArrowUpRight } from 'react-icons/go';
 import './CardNav.css';
@@ -56,7 +57,9 @@ const CardNav = ({
                     </div>
 
                     <div className="logo-container">
-                        <span className="font-['Museo_Sans:900',sans-serif] font-bold text-2xl tracking-wider" style={{ color: menuColor || '#000' }}>FOCUS</span>
+                        <Link to="/" className="no-underline">
+                            <span className="font-['Museo_Sans:900',sans-serif] font-bold text-2xl tracking-wider" style={{ color: menuColor || '#000' }}>FOCUS</span>
+                        </Link>
                     </div>
 
                     <a
@@ -96,8 +99,8 @@ const CardNav = ({
                                                 key={`${lnk.label}-${i}`}
                                                 className="nav-card-link"
                                                 href={lnk.href}
-                                                target={lnk.href.startsWith('#') ? undefined : "_blank"}
-                                                rel={lnk.href.startsWith('#') ? undefined : "noopener noreferrer"}
+                                                target={lnk.href.startsWith('http') || lnk.href.startsWith('mailto') ? "_blank" : undefined}
+                                                rel={lnk.href.startsWith('http') || lnk.href.startsWith('mailto') ? "noopener noreferrer" : undefined}
                                                 aria-label={lnk.ariaLabel || lnk.label}
                                             >
                                                 <GoArrowUpRight className="nav-card-link-icon" aria-hidden="true" />
