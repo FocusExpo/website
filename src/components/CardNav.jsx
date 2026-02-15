@@ -57,7 +57,21 @@ const CardNav = ({
                     </div>
 
                     <div className="logo-container">
-                        <Link to="/" className="no-underline">
+                        <Link
+                            to="/"
+                            className="no-underline"
+                            onClick={(e) => {
+                                // If we are on the home page, scroll to top smoothly
+                                if (window.location.pathname === '/') {
+                                    e.preventDefault();
+                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                }
+                                // If not on home page, Link will handle navigation, and scroll restoration (if set up) or default behavior should occur.
+                                // Adding window.scrollTo(0,0) here as a fallback for navigation is good but might conflict with Link's transition.
+                                // For simplicity and robustness, let's just scroll to top always.
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                        >
                             <span className="font-['Museo_Sans:900',sans-serif] font-bold text-2xl tracking-wider" style={{ color: menuColor || '#000' }}>FOCUS</span>
                         </Link>
                     </div>
