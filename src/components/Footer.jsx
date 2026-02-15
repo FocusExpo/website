@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 const imgLayer12 = "/assets/imgLayer12.svg";
 const imgVector = "/assets/imgVector.svg";
 const imgGroup3 = "/assets/imgGroup3.svg";
@@ -59,7 +59,8 @@ export default function Footer() {
                     © 2026 FOCUS EXPO. All rights reserved.
                 </p>
                 <div className="flex gap-4">
-                    {/* Privacy Policy / Terms Links could go here */}
+                    <Link to="/privacy-policy" className="font-['Museo_Sans:500',sans-serif] text-[#e5e5e3]/60 hover:text-[#dd664e] text-xs transition-colors">Privacy Policy</Link>
+                    <Link to="/terms-of-service" className="font-['Museo_Sans:500',sans-serif] text-[#e5e5e3]/60 hover:text-[#dd664e] text-xs transition-colors">Terms of Service</Link>
                 </div>
             </div>
         </div>
