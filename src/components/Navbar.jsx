@@ -10,8 +10,11 @@ export default function Navbar() {
             <nav className="fixed w-full z-50 bg-[#1c3d42]/90 backdrop-blur-md border-b border-[#3ea0ab]/20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-20">
-                        <div className="flex-shrink-0 cursor-pointer w-10 h-10" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                            <img src={imgVector} alt="FOCUS Logo" className="w-full h-full object-contain" />
+                        <div className="flex items-center gap-4 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                            <div className="flex-shrink-0 w-10 h-10">
+                                <img src={imgVector} alt="FOCUS Logo" className="w-full h-full object-contain" />
+                            </div>
+                            <span className="text-white font-bold text-2xl tracking-wider">FOCUS EXPO</span>
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-8">
@@ -44,8 +47,11 @@ export default function Navbar() {
                 <div className="fixed inset-0 z-[9999] bg-[#1c3d42] md:hidden flex flex-col h-[100dvh] w-screen overflow-hidden">
                     {/* Header inside Menu for continuity */}
                     <div className="flex items-center justify-between h-20 px-4 sm:px-6 border-b border-[#3ea0ab]/20 shrink-0">
-                        <div className="flex-shrink-0 cursor-pointer w-10 h-10" onClick={() => { setIsOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-                            <img src={imgVector} alt="FOCUS Logo" className="w-full h-full object-contain" />
+                        <div className="flex items-center gap-4 cursor-pointer" onClick={() => { setIsOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+                            <div className="flex-shrink-0 w-10 h-10">
+                                <img src={imgVector} alt="FOCUS Logo" className="w-full h-full object-contain" />
+                            </div>
+                            <span className="text-white font-bold text-2xl tracking-wider">FOCUS EXPO</span>
                         </div>
                         <button
                             onClick={() => setIsOpen(false)}

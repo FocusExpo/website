@@ -20,7 +20,7 @@ export default function Footer() {
                         <div className="w-8 h-8">
                             <img alt="Logo" className="w-full h-full" src={imgVector} />
                         </div>
-                        <span className="text-white font-bold text-2xl tracking-wider">FOCUS</span>
+                        <span className="text-white font-bold text-2xl tracking-wider">FOCUS EXPO</span>
                     </div>
                     <p className="font-['Museo_Sans:500',sans-serif] text-[#e5e5e3] text-sm leading-relaxed max-w-xs">
                         Aligning direction through the lens of faith. A professional intersection of Islamic values, mental wellness, and financial growth for Muslim leaders.
