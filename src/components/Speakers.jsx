@@ -1,31 +1,38 @@
 
 import { useRef, useState } from 'react';
 
-const imgImageWithFallback = "/assets/imgImageWithFallback.png";
-const imgImageWithFallback1 = "/assets/imgImageWithFallback1.png";
-const imgImageWithFallback2 = "/assets/imgImageWithFallback2.png";
-const imgImageWithFallback3 = "/assets/imgImageWithFallback3.png";
+
 
 const speakers = [
     {
-        name: "Guest Speaker",
-        role: "Clinical Psychologist & Wellness Expert",
-        image: imgImageWithFallback
+        name: "Adham",
+        role: "",
+        image: "/assets/panelist headshot/Headshot Adham.jpg"
     },
     {
-        name: "Guest Speaker",
-        role: "CEO, Crescent Capital Partners",
-        image: imgImageWithFallback1
+        name: "Dr. Shahla Ali",
+        role: "",
+        image: "/assets/panelist headshot/Headshot Dr. Shahla Ali.jpg"
     },
     {
-        name: "Guest Speaker",
-        role: "Executive Coach & Author",
-        image: imgImageWithFallback2
+        name: "Madiha Ashraf",
+        role: "",
+        image: "/assets/panelist headshot/Headshot Madiha Ashraf.jpeg"
     },
     {
-        name: "Guest Speaker",
-        role: "Venture Capitalist & Mentor",
-        image: imgImageWithFallback3
+        name: "Riaz Surti",
+        role: "",
+        image: "/assets/panelist headshot/Headshot Riaz Surti.png"
+    },
+    {
+        name: "Shaikh Omar Hussain",
+        role: "",
+        image: "/assets/panelist headshot/headshot Shaikh Omar Hussain.png"
+    },
+    {
+        name: "Zohaib Rattu",
+        role: "",
+        image: "/assets/panelist headshot/Headshot Zohaib Rattu.png"
     }
 ];
 

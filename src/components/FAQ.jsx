@@ -10,7 +10,7 @@ export default function FAQ() {
     const faqs = [
         {
             question: "Who should attend FOCUS Expo?",
-            answer: "FOCUS Expo is designed for professionals aged 25-45 looking to align their career ambitions with their spiritual values."
+            answer: "FOCUS Expo is designed for professionals aged 19-35 looking to align their career ambitions with their spiritual values."
         },
         {
             question: "What is the dress code?",

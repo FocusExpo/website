@@ -57,7 +57,7 @@ export default function About() {
                         In a world that often demands we compartmentalize our identities, FOCUS Expo invites you to bring your whole self.
                     </p>
                     <p className="font-['Inter:Regular',sans-serif] font-normal" data-node-id="4:545">
-                        <span className="font-['Museo_Sans:500',sans-serif] leading-relaxed">{`Designed specifically for professionals aged 25-45, this event is not just about networking - it is about `}</span>
+                        <span className="font-['Museo_Sans:500',sans-serif] leading-relaxed">{`Designed specifically for professionals aged 19-35, this event is not just about networking - it is about `}</span>
                         <span className="font-['Museo_Sans:700',sans-serif] leading-relaxed text-[#3d7a85]">calibration</span>
                         <span className="font-['Museo_Sans:500',sans-serif] leading-relaxed">.</span>
                     </p>
