@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-const imgLayer12 = "/assets/imgLayer12.svg";
+const imgLayer10 = "/assets/imgLayer10.svg";
 const imgVector = "/assets/imgVector.svg";
 const imgGroup3 = "/assets/imgGroup3.svg";
 const imgGroup4 = "/assets/imgGroup4.svg";
@@ -8,8 +8,8 @@ export default function Footer() {
     return (
         <div className="bg-[#1c3d42] flex flex-col gap-12 items-center pb-12 pt-16 px-4 sm:px-6 md:px-12 lg:px-24 relative w-full overflow-hidden">
             {/* Background Texture */}
-            <div className="absolute inset-0 pointer-events-none">
-                <img alt="" className="w-full h-full object-cover opacity-50" src={imgLayer12} />
+            <div className="absolute h-full w-full left-0 top-0 overflow-hidden pointer-events-none fade-in">
+                <img alt="" className="block w-full h-full object-cover opacity-30" src={imgLayer10} />
             </div>
 
             <div className="relative z-10 w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">

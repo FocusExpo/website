@@ -1,13 +1,13 @@
 
 
-const imgLayer11 = "/assets/imgLayer11.svg";
+const imgLayer10 = "/assets/imgLayer10.svg";
 
 export default function Location() {
     return (
         <div id="location" className="bg-[#1c3d42] flex flex-col gap-16 min-h-[800px] items-center py-24 px-4 sm:px-6 md:px-12 lg:px-24 relative w-full overflow-hidden">
             {/* Background Image */}
-            <div className="absolute inset-0 pointer-events-none">
-                <img alt="" className="w-full h-full object-cover opacity-50" src={imgLayer11} />
+            <div className="absolute h-full w-full left-0 top-0 overflow-hidden pointer-events-none fade-in">
+                <img alt="" className="block w-full h-full object-cover opacity-30" src={imgLayer10} />
             </div>
 
             {/* Header Content */}
