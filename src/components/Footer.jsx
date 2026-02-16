@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
+import FocusLogo from './FocusLogo';
 const imgLayer10 = "/assets/imgLayer10.svg";
-const imgVector = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
 const imgGroup3 = "/assets/imgGroup3.svg";
 const imgGroup4 = "/assets/imgGroup4.svg";
 
@@ -17,8 +17,8 @@ export default function Footer() {
                 {/* Brand Column */}
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center gap-4">
-                        <div className="w-32 h-10">
-                            <img alt="FOCUS Logo" className="w-full h-full object-contain" src={imgVector} />
+                        <div className="w-56 h-auto">
+                            <FocusLogo className="w-full h-full text-white" />
                         </div>
                     </div>
                     <p className="font-['Museo_Sans:500',sans-serif] text-[#e5e5e3] text-sm leading-relaxed max-w-xs">
