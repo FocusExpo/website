@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 const imgLayer10 = "/assets/imgLayer10.svg";
-const imgVector = "/assets/imgVector.svg";
+const imgVector = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
 const imgGroup3 = "/assets/imgGroup3.svg";
 const imgGroup4 = "/assets/imgGroup4.svg";
 
@@ -17,10 +17,9 @@ export default function Footer() {
                 {/* Brand Column */}
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center gap-4">
-                        <div className="w-8 h-8">
-                            <img alt="Logo" className="w-full h-full" src={imgVector} />
+                        <div className="w-32 h-10">
+                            <img alt="FOCUS Logo" className="w-full h-full object-contain" src={imgVector} />
                         </div>
-                        <span className="text-white font-bold text-2xl tracking-wider">FOCUS EXPO</span>
                     </div>
                     <p className="font-['Museo_Sans:500',sans-serif] text-[#e5e5e3] text-sm leading-relaxed max-w-xs">
                         Aligning direction through the lens of faith. A professional intersection of Islamic values, mental wellness, and financial growth for Muslim leaders.
