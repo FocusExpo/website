@@ -5,7 +5,7 @@ import { useRef, useState } from 'react';
 
 const speakers = [
     {
-        name: "Adham",
+        name: "Adham Aljahmi",
         role: "",
         image: "/assets/panelist headshot/Headshot Adham.jpg"
     },
