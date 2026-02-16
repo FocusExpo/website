@@ -72,7 +72,11 @@ const CardNav = ({
                                 window.scrollTo({ top: 0, behavior: 'smooth' });
                             }}
                         >
-                            <span className="font-['Museo_Sans:900',sans-serif] font-bold text-2xl tracking-wider" style={{ color: menuColor || '#000' }}>FOCUS</span>
+                            {logo ? (
+                                <img src={logo} alt={logoAlt} className="nav-logo" />
+                            ) : (
+                                <span className="font-['Museo_Sans:900',sans-serif] font-bold text-2xl tracking-wider" style={{ color: menuColor || '#000' }}>FOCUS</span>
+                            )}
                         </Link>
                     </div>
 

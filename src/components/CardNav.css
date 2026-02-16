@@ -78,8 +78,9 @@
     transform: translate(-50%, -50%);
 }
 
-.logo {
-    height: 28px;
+.nav-logo {
+    height: 48px;
+    width: auto;
 }
 
 .card-nav-cta-button {
