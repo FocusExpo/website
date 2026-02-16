@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import FocusLogo from './FocusLogo';
+const imgLogo = "/assets/Focus_Logo_Wmark_Teal_Wide.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Navbar() {
                     <div className="flex items-center justify-between h-20">
                         <div className="flex items-center gap-4 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                             <div className="flex-shrink-0 w-32 h-10">
-                                <FocusLogo className="w-full h-full text-[#3ea0ab]" />
+                                <img src={imgLogo} alt="FOCUS Logo" className="w-full h-full object-contain" />
                             </div>
 
                         </div>
@@ -49,7 +50,7 @@ export default function Navbar() {
                     <div className="flex items-center justify-between h-20 px-4 sm:px-6 border-b border-[#3ea0ab]/20 shrink-0">
                         <div className="flex items-center gap-4 cursor-pointer" onClick={() => { setIsOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
                             <div className="flex-shrink-0 w-32 h-10">
-                                <FocusLogo className="w-full h-full text-[#3ea0ab]" />
+                                <img src={imgLogo} alt="FOCUS Logo" className="w-full h-full object-contain" />
                             </div>
 
                         </div>
