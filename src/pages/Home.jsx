@@ -12,7 +12,7 @@ import CTA from '../components/CTA';
 import Footer from '../components/Footer';
 import FadeInWhenVisible from '../components/FadeInWhenVisible';
 
-const imgVector = "/assets/Focus_Logo_Wmark_Black.png";
+const imgVector = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
 
 function Home() {
     const navItems = [

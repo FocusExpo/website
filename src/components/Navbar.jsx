@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import FocusLogo from './FocusLogo';
-const imgLogo = "/assets/Focus_Logo_Wmark_Teal_Wide.png";
+const imgLogo = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
