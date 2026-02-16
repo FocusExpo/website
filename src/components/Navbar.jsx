@@ -55,9 +55,9 @@ export default function Navbar() {
                         </div>
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#3ea0ab]/20 focus:outline-none transition-colors"
+                            className="inline-flex items-center justify-center p-2.5 ml-5 rounded-md text-gray-400 hover:text-white hover:bg-[#3ea0ab]/20 focus:outline-none transition-colors"
                         >
-                            <X size={24} />
+                            <X size={28} />
                         </button>
                     </div>
 
