@@ -17,14 +17,14 @@ export default function Agenda() {
         {
             time: "11:00 AM",
             color: "#e47159",
-            title: "Breakout Workshops (Track A & B)",
+            title: "Spiritual and Mental Health Panel",
             description: "Choose from Financial Planning, Career Development, or Mental Wellness sessions"
         },
         {
             time: "1:00 PM",
             color: "#3d7a85",
-            title: "Networking Lunch",
-            description: "Connect with mentors, peers, and industry leaders"
+            title: "Comedy Show",
+            description: "Enjoy halal comedy showcase with multiple comics."
         },
         {
             time: "2:30 PM",
@@ -35,7 +35,7 @@ export default function Agenda() {
         {
             time: "4:00 PM",
             color: "#1c3d42",
-            title: "Closing Session & Networking Reception",
+            title: "Closing Open Mic Session & Networking Reception",
             description: "Final insights and continued connections"
         }
     ];

@@ -25,7 +25,7 @@ const speakers = [
         image: "/assets/panelist headshot/Headshot Riaz Surti.png"
     },
     {
-        name: "Shaikh Omar Hussain",
+        name: "Shaikh Omar Hussain PHD, LPC",
         role: "",
         image: "/assets/panelist headshot/headshot Shaikh Omar Hussain.png"
     },

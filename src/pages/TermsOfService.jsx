@@ -3,7 +3,7 @@ import React from 'react';
 import CardNav from '../components/CardNav';
 import Footer from '../components/Footer';
 
-const imgVector = "/assets/Focus_Logo_Wmark_Black.png";
+const imgVector = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
 
 export default function TermsOfService() {
     const navItems = [
@@ -32,7 +32,7 @@ export default function TermsOfService() {
             textColor: "#1c3d42",
             links: [
                 { label: "Register", href: "https://luma.com/64o45o5x" },
-                { label: "Contact", href: "mailto:info@focusexpo.com" }
+                { label: "Contact", href: "mailto:focussocialmedia0@gmail.com" }
             ]
         }
     ];
@@ -123,7 +123,7 @@ export default function TermsOfService() {
                     <section>
                         <h2 className="text-2xl font-bold text-[#1c3d42] mb-3">9. Contact Us</h2>
                         <p>
-                            If you have any questions about these Terms, you may email us at info@focusexpo.com.
+                            If you have any questions about these Terms, you may email us at focussocialmedia0@gmail.com.
                         </p>
                     </section>
                 </div>

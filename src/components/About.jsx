@@ -12,16 +12,16 @@ export default function About() {
             borderColor: "border-[#52a0ad]"
         },
         {
-            number: 25,
+            number: 10,
             suffix: "+",
             label: "Industry Speakers",
             bgColor: "bg-[#025054]",
             borderColor: "border-[#f68d6f]"
         },
         {
-            number: 12,
+            number: 10,
             suffix: "",
-            label: "Expert-Led Workshops",
+            label: "Expert-Led Activities",
             bgColor: "bg-[#025054]",
             borderColor: "border-[#52a0ad]"
         },

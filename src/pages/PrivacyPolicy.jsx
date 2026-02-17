@@ -3,7 +3,7 @@ import React from 'react';
 import CardNav from '../components/CardNav';
 import Footer from '../components/Footer';
 
-const imgVector = "/assets/Focus_Logo_Wmark_Black.png";
+const imgVector = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
 
 export default function PrivacyPolicy() {
     const navItems = [
@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
             textColor: "#1c3d42",
             links: [
                 { label: "Register", href: "https://luma.com/64o45o5x" },
-                { label: "Contact", href: "mailto:info@focusexpo.com" }
+                { label: "Contact", href: "mailto:focussocialmedia0@gmail.com" }
             ]
         }
     ];
@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
                         <p>
                             Welcome to FOCUS EXPO. We are committed to protecting your personal information and your right to privacy.
                             If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information,
-                            please contact us at info@focusexpo.com.
+                            please contact us at focussocialmedia0@gmail.com.
                         </p>
                     </section>
 
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
                     <section>
                         <h2 className="text-2xl font-bold text-[#1c3d42] mb-3">6. Contact Us</h2>
                         <p>
-                            If you have questions or comments about this policy, you may email us at info@focusexpo.com.
+                            If you have questions or comments about this policy, you may email us at focussocialmedia0@gmail.com.
                         </p>
                     </section>
                 </div>

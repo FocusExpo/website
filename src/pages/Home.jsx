@@ -41,7 +41,7 @@ function Home() {
             textColor: "#1c3d42",
             links: [
                 { label: "Register", href: "https://luma.com/64o45o5x" },
-                { label: "Contact", href: "mailto:info@focusexpo.com" }
+                { label: "Contact", href: "mailto:focussocialmedia0@gmail.com" }
             ]
         }
     ];

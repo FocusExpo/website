@@ -14,11 +14,11 @@ export default function FAQ() {
         },
         {
             question: "What is the dress code?",
-            answer: "The dress code is business casual / smart casual. We check-in coat check available."
+            answer: "The dress code is business casual / smart casual."
         },
         {
             question: "Will food be provided?",
-            answer: "Yes! We will provide halal breakfast, lunch, and refreshments throughout the day. Dietary restrictions can be noted during registration."
+            answer: "Yes! Halal lunch will be included. Refreshments will be available throughout the day."
         },
         {
             question: "Are there virtual attendance options?",
@@ -26,7 +26,7 @@ export default function FAQ() {
         },
         {
             question: "What is the refund policy?",
-            answer: "Tickets are refundable up to 30 days before the event. Transfers are available until 1 week prior."
+            answer: "There are no refunds for this event. All funds will be going to a non profit"
         }
     ];
 
