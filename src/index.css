@@ -30,6 +30,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@theme {
+  --animate-gradient: gradient 3s linear infinite;
+
+  @keyframes gradient {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
 a {
   font-weight: 500;
   color: #646cff;

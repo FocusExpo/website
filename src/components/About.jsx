@@ -49,7 +49,7 @@ export default function About() {
                     <p className="font-['Transducer_Test:Regular',sans-serif] leading-[1.1] not-italic relative shrink-0 text-[#1c3d42] text-4xl md:text-5xl max-w-lg whitespace-pre-wrap" data-node-id="4:540">
                         <span className="text-[#013030]">The Answers You Have Been</span>
                         <span>{` `}</span>
-                        <span className="font-['Transducer_Test:Bold',sans-serif] text-[#025054]">Seeking.</span>
+                        <span className="font-['Transducer_Test:Bold',sans-serif] bg-gradient-to-r from-[#1c3d42] via-[#3ea0ab] via-[#f68d6f] to-[#1c3d42] bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent">Seeking.</span>
                     </p>
                 </div>
                 <div className="flex flex-col gap-6 items-start not-italic relative shrink-0 text-[#1c3d42] text-lg max-w-2xl" data-name="Container" data-node-id="4:541">
