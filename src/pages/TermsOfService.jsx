@@ -1,7 +1,7 @@
-
 import React from 'react';
 import CardNav from '../components/CardNav';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const imgVector = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
 
@@ -39,6 +39,10 @@ export default function TermsOfService() {
 
     return (
         <div className="bg-[#f2f2f1] min-h-screen flex flex-col font-['Museo_Sans:500',sans-serif]">
+            <SEO
+                title="Terms of Service"
+                description="Terms of Service for FOCUS Expo. Understand the rules and guidelines for using our services."
+            />
             <CardNav
                 logo={imgVector}
                 items={navItems}

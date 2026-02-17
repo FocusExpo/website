@@ -14,6 +14,8 @@ import FadeInWhenVisible from '../components/FadeInWhenVisible';
 
 const imgVector = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
 
+import SEO from '../components/SEO';
+
 function Home() {
     const navItems = [
         {
@@ -48,6 +50,7 @@ function Home() {
 
     return (
         <div className="bg-[#f2f2f1] min-h-screen">
+            <SEO />
             <CardNav
                 logo={imgVector}
                 items={navItems}
