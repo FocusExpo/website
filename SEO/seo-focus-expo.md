@@ -38,16 +38,16 @@ const eventRegion = "TX"; // State abbreviation
 // ==========================================
 
 // The "Blue Link" text in Google. Keep it under 60 characters if possible.
-const defaultTitle = "FOCUS Expo | Faith. Opportunity. Career. Unity. Strength.";
+const defaultTitle = "Focus Expo 2026 | Faith. Opportunity. Career. Unity. Strength.";
 
 // The grey text under the link in Google. Keep under 160 characters.
 // NOTICE: We included the date and city here to increase clicks from locals.
 const defaultDescription =
-  "Join FOCUS Expo in Plano, TX on April 4, 2026. A transformative event for professionals blending career ambition with spiritual grounding, mental wellness, and networking.";
+  "Join Focus Expo 2026 in Plano, TX on April 4, 2026. A transformative event for Muslim professionals blending career ambition with spiritual grounding, mental wellness, and networking. Discover expert-led workshops, industry leaders, and a community dedicated to growth.";
 
 // Keywords: Comma-separated list. Less important for Google now, but good for other engines.
 const defaultKeywords =
-  "FOCUS Expo, Muslim professionals, career development, Islamic values, mental wellness, Plano events, Dallas networking";
+  "Focus Expo, Focus Expo 2026, Get Focused 2026, Focus Conference, Muslim Professional Network, Islamic Career Development, Muslim Mental Wellness, Plano Muslim Events, Dallas Muslim Networking, Faith and Career, Muslim Leadership Conference, Islamic Business Expo, Halal Professional Events, Muslim Entrepreneurs, Spiritual Growth, Career Ambition, Unity and Strength, Muslim Youth Professionals, DFW Muslim Events";
 
 // ==========================================
 // 4. ASSETS (Images & Colors)
