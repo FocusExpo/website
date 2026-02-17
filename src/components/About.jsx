@@ -46,7 +46,7 @@ export default function About() {
                 data-node-id="4:538"
             >
                 <div className="flex items-center relative shrink-0" data-name="Heading 2" data-node-id="4:539">
-                    <p className="font-['Transducer_Test:Regular',sans-serif] leading-[1.1] not-italic relative shrink-0 text-[#1c3d42] text-4xl md:text-5xl max-w-lg whitespace-pre-wrap" data-node-id="4:540">
+                    <p className="font-['Transducer_Test:Regular',sans-serif] leading-[1.1] not-italic relative shrink-0 text-[#1c3d42] text-4xl md:text-5xl max-w-full md:max-w-lg whitespace-normal" data-node-id="4:540">
                         <span className="text-[#013030]">The Answers You Have Been</span>
                         <span>{` `}</span>
                         <span className="font-['Transducer_Test:Bold',sans-serif] bg-[linear-gradient(to_right,#1c3d42,#52a0ad,#f68d6f,#e47159,#3d7a85,#1c3d42)] bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent">Seeking.</span>
