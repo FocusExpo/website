@@ -3,42 +3,12 @@ import { useRef, useState } from 'react';
 
 
 
-const speakers = [
-    {
-        name: "Adham Aljahmi",
-        role: "",
-        image: "/assets/panelist headshot/Headshot Adham.jpg"
-    },
-    {
-        name: "Dr. Shahla Ali",
-        role: "",
-        image: "/assets/panelist headshot/Headshot Dr. Shahla Ali.jpg"
-    },
-    {
-        name: "Madiha Ashraf",
-        role: "",
-        image: "/assets/panelist headshot/Headshot Madiha Ashraf.jpeg"
-    },
-    {
-        name: "Riaz Surti",
-        role: "",
-        image: "/assets/panelist headshot/Headshot Riaz Surti.png"
-    },
-    {
-        name: "Shaikh Omar Hussain PHD, LPC",
-        role: "",
-        image: "/assets/panelist headshot/headshot Shaikh Omar Hussain.png"
-    },
-    {
-        name: "Zohaib Rattu",
-        role: "",
-        image: "/assets/panelist headshot/Headshot Zohaib Rattu.png"
-    }
-];
+import speakersData from '../data/speakers.json';
 
 export default function Speakers() {
     const [activeIndex, setActiveIndex] = useState(0);
     const scrollRef = useRef(null);
+    const speakers = speakersData;
 
     const handleScroll = () => {
         if (scrollRef.current) {
@@ -68,7 +38,7 @@ export default function Speakers() {
                         <div className="relative overflow-hidden rounded-lg border-2 border-[#3ea0ab] aspect-[3/4] mb-4 bg-[#1c3d42]/5">
                             <img
                                 src={speaker.image}
-                                alt={`${speaker.name} - ${speaker.role}`}
+                                alt={`${speaker.name} - ${speaker.description}`}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                         </div>
@@ -76,7 +46,7 @@ export default function Speakers() {
                             {speaker.name}
                         </h3>
                         <p className="font-['Inter:Regular',sans-serif] text-[#1c3d42]/80 text-sm">
-                            {speaker.role}
+                            {speaker.description}
                         </p>
                     </div>
                 ))}
@@ -95,7 +65,7 @@ export default function Speakers() {
                             <div className="relative overflow-hidden rounded-lg border-2 border-[#3ea0ab] aspect-[3/4] mb-4 bg-[#1c3d42]/5">
                                 <img
                                     src={speaker.image}
-                                    alt={`${speaker.name} - ${speaker.role}`}
+                                    alt={`${speaker.name} - ${speaker.description}`}
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -103,7 +73,7 @@ export default function Speakers() {
                                 {speaker.name}
                             </h3>
                             <p className="font-['Inter:Regular',sans-serif] text-[#1c3d42]/80 text-xs">
-                                {speaker.role}
+                                {speaker.description}
                             </p>
                         </div>
                     ))}

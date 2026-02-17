@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Adham Aljahmi",
+        "image": "/assets/panelist headshot/Headshot Adham.jpg",
+        "description": "VP of Growth for Fragrant Jewels, Actor and Comedian"
+    },
+    {
+        "name": "Dr. Shahla Ali",
+        "image": "/assets/panelist headshot/Headshot Dr. Shahla Ali.jpg",
+        "description": "Double board-certified interventional psychiatrist with 18+ years experience."
+    },
+    {
+        "name": "Madiha Ashraf",
+        "image": "/assets/panelist headshot/Headshot Madiha Ashraf.jpeg",
+        "description": "PhD candidate in Counselor Education, specializing in marital/family counseling."
+    },
+    {
+        "name": "Riaz Surti",
+        "image": "/assets/panelist headshot/Headshot Riaz Surti.png",
+        "description": "CEO of Hearthy Foods: innovative healthy-based ingredients, inspired by his mother, built on inclusion."
+    },
+    {
+        "name": "Imam Omar Hussain PHD, LPC",
+        "image": "/assets/panelist headshot/headshot Shaikh Omar Hussain.png",
+        "description": "PhD in Counselor Education and Supervision, Graduate of Al-Azhar University"
+    },
+    {
+        "name": "Zohaib Rattu",
+        "image": "/assets/panelist headshot/Headshot Zohaib Rattu.png",
+        "description": "Co Founder of Refunnel and Muslim Professionals"
+    }
+]
