@@ -117,6 +117,7 @@ const CardNav = ({
                                                 key={`${lnk.label}-${i}`}
                                                 className="nav-card-link"
                                                 href={lnk.href}
+                                                onClick={() => setIsExpanded(false)}
                                                 target={lnk.href.startsWith('http') || lnk.href.startsWith('mailto') ? "_blank" : undefined}
                                                 rel={lnk.href.startsWith('http') || lnk.href.startsWith('mailto') ? "noopener noreferrer" : undefined}
                                                 aria-label={lnk.ariaLabel || lnk.label}
