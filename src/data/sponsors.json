@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Allen Psychiatry",
+        "image": "/assets/sponsor logos/Allen_Psych.png",
+        "url": "https://www.allenpsychiatry.com/"
+    },
+    {
+        "id": 2,
+        "name": "Droplets Of Mercy",
+        "image": "/assets/sponsor logos/Droplets Of Mercy - WM - Horizontal.png",
+        "url": "https://dropletsofmercyusa.org/"
+    }
+]

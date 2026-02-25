@@ -1,4 +1,3 @@
-
 import Hero from '../components/Hero';
 import CardNav from '../components/CardNav';
 import About from '../components/About';
@@ -6,6 +5,7 @@ import Pillars from '../components/Pillars';
 import WhyAttend from '../components/WhyAttend';
 import Speakers from '../components/Speakers';
 import Agenda from '../components/Agenda';
+import Sponsors from '../components/Sponsors';
 import Location from '../components/Location';
 import FAQ from '../components/FAQ';
 import CTA from '../components/CTA';
@@ -25,7 +25,8 @@ function Home() {
             links: [
                 { label: "About", href: "/#about" },
                 { label: "Speakers", href: "/#speakers" },
-                { label: "Agenda", href: "/#agenda" }
+                { label: "Agenda", href: "/#agenda" },
+                { label: "Sponsors", href: "/#sponsors" }
             ]
         },
         {
@@ -60,6 +61,7 @@ function Home() {
                 buttonTextColor="#ffffff"
             />
             <FadeInWhenVisible><Hero /></FadeInWhenVisible>
+            <FadeInWhenVisible><Sponsors /></FadeInWhenVisible>
             <FadeInWhenVisible><About /></FadeInWhenVisible>
             <FadeInWhenVisible><Pillars /></FadeInWhenVisible>
             <FadeInWhenVisible><WhyAttend /></FadeInWhenVisible>
