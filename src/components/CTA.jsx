@@ -33,7 +33,7 @@ export default function CTA() {
                     Early Bird tickets are now available. Join the community that is redefining professional success.
                 </p>
             </div>
-            <a href="https://luma.com/64o45o5x" target="_blank" rel="noopener noreferrer" className="bg-white px-[48px] py-[20px] rounded-[4px] shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 group border-2 border-white block text-decoration-none">
+            <a href="https://luma.com/getfocused2026" target="_blank" rel="noopener noreferrer" className="bg-white px-[48px] py-[20px] rounded-[4px] shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 group border-2 border-white block text-decoration-none">
                 <p className="font-['Transducer_Test:Bold',sans-serif] text-[18px] text-center text-[#025054] tracking-[2px] uppercase group-hover:tracking-[3px] transition-all">
                     SIGN UP FOR EARLY BIRD
                 </p>

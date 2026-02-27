@@ -50,7 +50,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-[16px] items-center justify-center relative shrink-0 w-full max-w-lg" data-name="Container" data-node-id="4:533">
-                        <a href="https://luma.com/64o45o5x" target="_blank" rel="noopener noreferrer" className="bg-white flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-gray-100 transition-colors border-2 border-white flex items-center justify-center shadow-lg text-decoration-none" data-name="Button" data-node-id="4:534">
+                        <a href="https://luma.com/getfocused2026" target="_blank" rel="noopener noreferrer" className="bg-white flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-gray-100 transition-colors border-2 border-white flex items-center justify-center shadow-lg text-decoration-none" data-name="Button" data-node-id="4:534">
                             <p className="font-['Transducer_Test:Bold',sans-serif] text-[#025054] text-[14px] text-center tracking-[1px] uppercase">
                                 Sign Up Now
                             </p>

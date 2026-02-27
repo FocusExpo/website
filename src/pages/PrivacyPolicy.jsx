@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
             bgColor: "#f2e7d1",
             textColor: "#1c3d42",
             links: [
-                { label: "Register", href: "https://luma.com/64o45o5x" },
+                { label: "Register", href: "https://luma.com/getfocused2026" },
                 { label: "Contact", href: "mailto:focussocialmedia0@gmail.com" }
             ]
         }

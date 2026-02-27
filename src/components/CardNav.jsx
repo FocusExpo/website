@@ -81,7 +81,7 @@ const CardNav = ({
                     </div>
 
                     <a
-                        href="https://luma.com/64o45o5x"
+                        href="https://luma.com/getfocused2026"
                         target="_blank" rel="noopener noreferrer"
                         className="card-nav-cta-button flex items-center justify-center no-underline"
                         style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
