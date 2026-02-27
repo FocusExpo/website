@@ -21,7 +21,7 @@ export default function Speakers() {
     };
 
     return (
-        <div id="speakers" className="bg-[#f2e7d1] flex flex-col gap-16 items-center py-24 w-full overflow-hidden">
+        <div id="speakers" data-lenis-prevent="true" className="bg-[#f2e7d1] flex flex-col gap-16 items-center py-24 w-full overflow-hidden">
             <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 flex flex-col gap-4 items-center w-full">
                 <p className="font-['Museo_Sans:700',sans-serif] text-[#52a0ad] text-sm tracking-[3.5px] uppercase text-center">
                     Learn From The Best
@@ -32,7 +32,7 @@ export default function Speakers() {
             </div>
 
             {/* Desktop Grid */}
-            <div className="hidden md:grid container mx-auto px-4 grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-7xl">
+            <div className="hidden md:grid container mx-auto px-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 w-full max-w-7xl">
                 {speakers.map((speaker, index) => (
                     <div key={index} className="flex flex-col group">
                         <div className="relative overflow-hidden rounded-lg border-2 border-[#3ea0ab] aspect-[3/4] mb-4 bg-[#1c3d42]/5">
@@ -59,6 +59,7 @@ export default function Speakers() {
                     onScroll={handleScroll}
                     className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-8 scrollbar-hide"
                     style={{ scrollBehavior: 'smooth' }}
+                    data-lenis-prevent="true"
                 >
                     {speakers.map((speaker, index) => (
                         <div key={index} className="snap-center shrink-0 w-[260px] flex flex-col group">

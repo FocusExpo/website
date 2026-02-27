@@ -130,7 +130,7 @@ export default function Agenda() {
     ));
 
     return (
-        <div id="agenda" className="bg-[#faf7f2] flex flex-col gap-[48px] items-center pt-[96px] pb-24 relative shrink-0 w-full" data-name="6_Section_Agenda">
+        <div id="agenda" data-lenis-prevent="true" className="bg-[#faf7f2] flex flex-col gap-[48px] items-center pt-[96px] pb-24 relative shrink-0 w-full" data-name="6_Section_Agenda">
             <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="Container">
                 <div className="h-[20px] relative shrink-0 w-full text-center" data-name="Container">
                     <p className="font-['Museo_Sans:700',sans-serif] leading-[20px] not-italic text-[#e47159] text-[14px] tracking-[3.5px] uppercase">

@@ -10,5 +10,11 @@
         "name": "Droplets Of Mercy",
         "image": "/assets/sponsor logos/Droplets Of Mercy - WM - Horizontal.png",
         "url": "https://dropletsofmercyusa.org/"
+    },
+    {
+        "id": 3,
+        "name": "Muslim Professionals",
+        "image": "/assets/sponsor logos/muslim-professionals-logo-transparent.png",
+        "url": "https://muslimprofessionals.com/"
     }
 ]

@@ -2,7 +2,7 @@
     {
         "name": "Adham Aljahmi",
         "image": "/assets/panelist headshot/Headshot Adham.jpg",
-        "description": "VP of Growth for Fragrant Jewels, Actor and Comedian"
+        "description": "Head of Marketing for Euka AI, Actor and Comedian"
     },
     {
         "name": "Dr. Shahla Ali",
@@ -16,17 +16,37 @@
     },
     {
         "name": "Riaz Surti",
-        "image": "/assets/panelist headshot/Headshot Riaz Surti.png",
+        "image": "/assets/panelist headshot/Headshot Riaz Surti.jpg",
         "description": "CEO of Hearthy Foods: innovative healthy-based ingredients, inspired by his mother, built on inclusion."
     },
     {
         "name": "Imam Omar Hussain PHD, LPC",
-        "image": "/assets/panelist headshot/headshot Shaikh Omar Hussain.png",
+        "image": "/assets/panelist headshot/headshot Imam Omar Hussain PHD, LPC.jpg",
         "description": "PhD in Counselor Education and Supervision, Graduate of Al-Azhar University"
     },
     {
         "name": "Zohaib Rattu",
-        "image": "/assets/panelist headshot/Headshot Zohaib Rattu.png",
+        "image": "/assets/panelist headshot/Headshot Zohaib Rattu.jpg",
         "description": "Co Founder of Refunnel and Muslim Professionals"
+    },
+    {
+        "name": "Muhammad Joyo",
+        "image": "/assets/panelist headshot/Muhammad Joyo Headshot.jpeg",
+        "description": "CEO of Elaichi Co; Weaving cultural connections through the culinary arts and bold flavors."
+    },
+    {
+        "name": "Zainab Joyo",
+        "image": "/assets/panelist headshot/Zainab Joyo Headshot.jpg",
+        "description": "CMO of Elaichi Co; Weaving cultural connections through the culinary arts and bold flavors."
+    },
+    {
+        "name": "Ahmad Abdullah",
+        "image": "/assets/panelist headshot/Ahmad Abdallah.jpg",
+        "description": "Co Founder of Nominal; driving brand storytelling and community-led growth for a culture-rooted jewelry brand."
+    },
+    {
+        "name": "Maryam Ishtiaq",
+        "image": "/assets/panelist headshot/Maryam Ishtiaq Headshot.jpg",
+        "description": "Founder of It’s Actually—premium halal bone broth built on clean ingredients, heritage, and product innovation."
     }
 ]

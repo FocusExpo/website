@@ -63,7 +63,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Menu Links */}
-                    <div className="flex-1 overflow-y-auto px-4 py-8 flex flex-col gap-6">
+                    <div className="flex-1 overflow-y-auto px-4 py-8 flex flex-col gap-6" data-lenis-prevent="true">
                         <a href="#about" onClick={() => setIsOpen(false)} className="text-[#3EA0AB] hover:text-[#dd664e] text-2xl font-bold uppercase tracking-wide transition-colors border-b border-[#3ea0ab]/10 pb-4">About</a>
                         <a href="#speakers" onClick={() => setIsOpen(false)} className="text-[#3EA0AB] hover:text-[#dd664e] text-2xl font-bold uppercase tracking-wide transition-colors border-b border-[#3ea0ab]/10 pb-4">Speakers</a>
                         <a href="#agenda" onClick={() => setIsOpen(false)} className="text-[#3EA0AB] hover:text-[#dd664e] text-2xl font-bold uppercase tracking-wide transition-colors border-b border-[#3ea0ab]/10 pb-4">Agenda</a>

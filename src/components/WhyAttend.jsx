@@ -40,7 +40,7 @@ export default function WhyAttend() {
     };
 
     return (
-        <div id="why-attend" className="bg-[#f2e7d1] flex flex-col gap-[64px] items-center pt-[96px] pb-24 relative shrink-0 w-full" data-name="4_Section_WhyFocus" data-node-id="11:665">
+        <div id="why-attend" data-lenis-prevent="true" className="bg-[#f2e7d1] flex flex-col gap-[64px] items-center pt-[96px] pb-24 relative shrink-0 w-full" data-name="4_Section_WhyFocus" data-node-id="11:665">
             <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl flex flex-col gap-[16px] items-center relative shrink-0 w-full" data-name="Container" data-node-id="11:806">
                 <div className="flex flex-col items-center justify-center relative shrink-0 w-full" data-name="Container" data-node-id="11:807">
                     <p className="font-['Museo_Sans:700',sans-serif] leading-[20px] not-italic relative shrink-0 text-[#e47159] text-[14px] text-center tracking-[3.5px] uppercase" data-node-id="11:808">
@@ -84,6 +84,7 @@ export default function WhyAttend() {
                     onScroll={handleScroll}
                     className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-8 scrollbar-hide"
                     style={{ scrollBehavior: 'smooth' }}
+                    data-lenis-prevent="true"
                 >
                     {reasons.map((reason, index) => (
                         <div key={index} className="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#faf7f2] border-2 flex flex-col gap-[20px] min-h-[280px] h-auto items-start p-6 relative rounded-[6px]" style={{ borderColor: reason.borderColor }}>

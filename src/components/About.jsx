@@ -35,7 +35,7 @@ export default function About() {
     ];
 
     return (
-        <div id="about" className="bg-[#f2e7d1] flex flex-col items-center relative shrink-0 w-full py-24" data-name="2_Section_Intro" data-node-id="16:4">
+        <div id="about" data-lenis-prevent="true" className="bg-[#f2e7d1] flex flex-col items-center relative shrink-0 w-full py-24" data-name="2_Section_Intro" data-node-id="16:4">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

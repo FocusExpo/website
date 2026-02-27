@@ -9,7 +9,7 @@ import ShinyText from './ShinyText';
 
 export default function Hero() {
     return (
-        <div id="hero" className="bg-[#1c3d42] content-stretch flex flex-col gap-[40px] md:gap-[90px] min-h-screen items-center justify-center overflow-hidden py-[100px] md:py-[200px] relative shrink-0 w-full" data-name="1_Section_Hero" data-node-id="4:419">
+        <div id="hero" data-lenis-prevent="true" className="bg-[#1c3d42] content-stretch flex flex-col gap-[40px] md:gap-[90px] min-h-screen items-center justify-center overflow-hidden py-[100px] md:py-[200px] relative shrink-0 w-full" data-name="1_Section_Hero" data-node-id="4:419">
             <div className="absolute h-full w-full left-0 top-0 overflow-hidden pointer-events-none fade-in" data-name="Layer_10" data-node-id="5:5">
                 <img alt="" className="block w-full h-full object-cover opacity-30" src={imgLayer10} />
             </div>

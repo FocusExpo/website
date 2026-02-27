@@ -10,7 +10,7 @@ export default function Sponsors() {
     }));
 
     return (
-        <div id="sponsors" className="bg-[#f2e7d1] flex flex-col items-center py-12 relative shrink-0 w-full overflow-hidden">
+        <div id="sponsors" data-lenis-prevent="true" className="bg-[#f2e7d1] flex flex-col items-center py-12 relative shrink-0 w-full overflow-hidden">
             <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 max-w-7xl flex flex-col gap-[16px] items-center text-center mb-12">
                 <h2 className="font-['Transducer_Test:Medium',sans-serif] text-[#1c3d42] text-[48px] tracking-[-1.2px]">
                     Sponsored By
