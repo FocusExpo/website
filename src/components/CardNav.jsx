@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GoArrowUpRight } from 'react-icons/go';
@@ -117,7 +117,29 @@ const CardNav = ({
                                                 key={`${lnk.label}-${i}`}
                                                 className="nav-card-link"
                                                 href={lnk.href}
-                                                onClick={() => setIsExpanded(false)}
+                                                onClick={(e) => {
+                                                    if (lnk.href && lnk.href.startsWith('/#') && window.location.pathname === '/') {
+                                                        e.preventDefault();
+                                                        setIsExpanded(false);
+                                                        const targetId = lnk.href.substring(2);
+
+                                                        // Adding a slight delay allows the menu closing animation
+                                                        // to start before we scroll, which can fix scroll interceptions
+                                                        setTimeout(() => {
+                                                            const elem = document.getElementById(targetId);
+                                                            if (elem) {
+                                                                const y = elem.getBoundingClientRect().top + window.scrollY - 80;
+                                                                window.scrollTo({ top: y, behavior: 'smooth' });
+                                                                window.history.pushState(null, '', `/#${targetId}`);
+                                                            } else {
+                                                                // Fallback if element not found right away
+                                                                window.location.hash = targetId;
+                                                            }
+                                                        }, 50);
+                                                    } else {
+                                                        setIsExpanded(false);
+                                                    }
+                                                }}
                                                 target={lnk.href.startsWith('http') || lnk.href.startsWith('mailto') ? "_blank" : undefined}
                                                 rel={lnk.href.startsWith('http') || lnk.href.startsWith('mailto') ? "noopener noreferrer" : undefined}
                                                 aria-label={lnk.ariaLabel || lnk.label}
