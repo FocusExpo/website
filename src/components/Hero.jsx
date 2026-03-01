@@ -36,7 +36,7 @@ export default function Hero() {
                                     <span className="leading-[32.5px] text-[#3ea0ab]">{` `}</span>
                                     <ShinyText text="mental wellness" disabled={false} speed={3} className="font-['Museo_Sans:900',sans-serif] leading-[32.5px]" color="#A83F3F" shineColor="#ffffff" />
                                     <span className="leading-[32.5px]">{`, and `}</span>
-                                    <ShinyText text="financial growth." disabled={false} speed={3} className="font-['Museo_Sans:900',sans-serif] leading-[32.5px]" color="#dd664e" shineColor="#ffffff" />
+                                    <ShinyText text="personal growth." disabled={false} speed={3} className="font-['Museo_Sans:900',sans-serif] leading-[32.5px]" color="#dd664e" shineColor="#ffffff" />
                                 </p>
                             </div>
                         </div>

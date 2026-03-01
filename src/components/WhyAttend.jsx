@@ -14,13 +14,13 @@ const reasons = [
     },
     {
         title: "Actionable Workshops",
-        description: "No fluff. Just practical strategies you can implement Monday morning. From financial planning to career pivots to mental health practices.",
+        description: "No fluff. Just practical strategies you can implement Monday morning. From career pivots to mental health practices.",
         icon: imgFrame,
         borderColor: "#f68d6f"
     },
     {
         title: "Holistic Approach",
-        description: "We address the full spectrum: spiritual alignment, mental wellness, career growth, and financial literacy. Because success is multidimensional.",
+        description: "We address the full spectrum: spiritual alignment, mental wellness, career growth, and personal growth. Because success is multidimensional.",
         icon: imgFrame1,
         borderColor: "#52a0ad"
     }

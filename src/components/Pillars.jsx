@@ -29,7 +29,7 @@ const pillars = [
     {
         letter: "S",
         title: "Strength",
-        description: "Mental and financial resilience.",
+        description: "Mental and personal resilience.",
         color: "#1c3d42"
     }
 ];
