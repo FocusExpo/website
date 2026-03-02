@@ -10,6 +10,7 @@ import Location from '../components/Location';
 import FAQ from '../components/FAQ';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
+import JointCharity from '../components/JointCharity';
 import FadeInWhenVisible from '../components/FadeInWhenVisible';
 
 const imgVector = "/assets/Focus_Logo_Wmark_Teal_Wide.svg";
@@ -70,6 +71,7 @@ function Home() {
             <FadeInWhenVisible><Location /></FadeInWhenVisible>
             <FadeInWhenVisible><FAQ /></FadeInWhenVisible>
             <FadeInWhenVisible><CTA /></FadeInWhenVisible>
+            <FadeInWhenVisible><JointCharity /></FadeInWhenVisible>
             <FadeInWhenVisible><Footer /></FadeInWhenVisible>
         </div>
     );
