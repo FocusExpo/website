@@ -27,7 +27,8 @@ function Home() {
                 { label: "About", href: "/#about" },
                 { label: "Speakers", href: "/#speakers" },
                 { label: "Agenda", href: "/#agenda" },
-                { label: "Sponsors", href: "/#sponsors" }
+                { label: "Sponsors", href: "/#sponsors" },
+                { label: "Charity", href: "/#charity" }
             ]
         },
         {

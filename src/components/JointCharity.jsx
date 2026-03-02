@@ -4,13 +4,13 @@ const defaultImage = "/assets/droplet charity section/droplet-charity.jpeg";
 
 export default function JointCharity() {
     return (
-        <div data-lenis-prevent="true" className="bg-[#1c3d42] flex flex-col items-center py-20 px-6 sm:px-12 lg:px-24 relative w-full overflow-hidden border-t border-[#3ea0ab]/20">
+        <div id="charity" data-lenis-prevent="true" className="bg-[#1c3d42] flex flex-col items-center py-20 px-6 sm:px-12 lg:px-24 relative w-full overflow-hidden border-t border-[#3ea0ab]/20">
             <div className="max-w-7xl mx-auto w-full flex flex-col gap-16">
 
                 {/* Header */}
                 <div className="text-center md:text-left flex flex-col gap-4">
                     <h2 className="text-[#f2e7d1] text-4xl sm:text-5xl font-['Museo_Sans:900',sans-serif] tracking-wide uppercase">
-                        Droplet & Focus Joint Charity
+                        Emergency & Care Initiatives Charity
                     </h2>
                     <div className="w-24 h-1 bg-[#dd664e] mx-auto md:mx-0"></div>
                 </div>
@@ -28,7 +28,7 @@ export default function JointCharity() {
                     >
                         <img
                             src={defaultImage}
-                            alt="Droplet & Focus Joint Charity"
+                            alt="Emergency & Care Initiatives Charity"
                             className="w-full h-full object-cover"
                         />
                     </motion.div>
@@ -80,6 +80,7 @@ export default function JointCharity() {
                         href="https://fundraise.dropletsofmercyusa.org/emergency-care-initiatives-in-partnership-with-focus-expo-2026"
                         target="_blank"
                         rel="noopener noreferrer"
+                        style={{ color: 'white' }}
                         className="bg-[#dd664e] hover:bg-[#c55842] text-white px-12 py-4 rounded-md font-bold text-xl uppercase tracking-wider transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center gap-2"
                     >
                         Donate
