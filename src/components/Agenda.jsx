@@ -66,9 +66,9 @@ export default function Agenda() {
             color: "#1c3d42", // Dark Slate/Teal
             bgColor: "bg-white",
             prefix: "Workshop:",
-            title: "Personal Branding & How to Leverage it in your Career",
-            speaker: "By Sara Bannat",
-            description: "Turn your story, skills, and strengths into a brand that elevates your career trajectory.",
+            title: "The Creator Playbook for Personal Branding",
+            speaker: "By Faiyaz Bin Zia",
+            description: "Leave with a clear framework to create, position, and scale your personal brand with intention.",
             room: "Windhaven Room"
         },
         {
@@ -76,9 +76,9 @@ export default function Agenda() {
             color: "#e47159", // Coral
             bgColor: "bg-white",
             prefix: "Workshop:",
-            title: "Using Grounding Techniques to Regulate & Refocus",
+            title: "Rooted & Regulated: Finding Calm in the Chaos",
             speaker: "By Madiha Ashraf",
-            description: "Walk away with practical techniques to reset your nervous system and restore focus.",
+            description: "Learn practical skills to manage anxiety and emotional reactivity",
             room: "Windhaven Room"
         },
         {

@@ -9,7 +9,8 @@
         "id": 2,
         "name": "Droplets Of Mercy",
         "image": "/assets/sponsor logos/Droplets Of Mercy - WM - Horizontal.png",
-        "url": "https://dropletsofmercyusa.org/"
+        "url": "https://dropletsofmercyusa.org/",
+        "scale": 1.5
     },
     {
         "id": 3,
