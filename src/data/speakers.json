@@ -1,5 +1,15 @@
 [
     {
+        "name": "Imam Suhaib Webb",
+        "image": "/assets/panelist headshot/Suhaib Webb Headshot.jpg",
+        "description": "Boston Imam, Al-Azhar graduate, inspiring modern faith and focus"
+    },
+    {
+        "name": "Shaikh Mikaeel Smith",
+        "image": "/assets/panelist headshot/Shaykh Mikaeel Smith.jpeg",
+        "description": "Scholar, author, and guide for faith-centered living"
+    },
+    {
         "name": "Adham Aljahmi",
         "image": "/assets/panelist headshot/Headshot Adham.jpg",
         "description": "Head of Marketing for Euka AI, Actor and Comedian"
@@ -16,37 +26,52 @@
     },
     {
         "name": "Riaz Surti",
-        "image": "/assets/panelist headshot/Headshot Riaz Surti.jpg",
+        "image": "/assets/panelist headshot/Headshot Riaz Surti.png",
         "description": "CEO of Hearthy Foods: innovative healthy-based ingredients, inspired by his mother, built on inclusion."
     },
     {
         "name": "Imam Omar Hussain PHD, LPC",
-        "image": "/assets/panelist headshot/headshot Imam Omar Hussain PHD, LPC.jpg",
+        "image": "/assets/panelist headshot/headshot Shaikh Omar Hussain.png",
         "description": "PhD in Counselor Education and Supervision, Graduate of Al-Azhar University"
     },
     {
         "name": "Zohaib Rattu",
-        "image": "/assets/panelist headshot/Headshot Zohaib Rattu.jpg",
+        "image": "/assets/panelist headshot/Headshot Zohaib Rattu.png",
         "description": "Co Founder of Refunnel and Muslim Professionals"
     },
     {
         "name": "Muhammad Joyo",
         "image": "/assets/panelist headshot/Muhammad Joyo Headshot.jpeg",
-        "description": "CEO of Elaichi Co; Weaving cultural connections through the culinary arts and bold flavors."
+        "description": "CEO of Elaichi Co; weaving cultural connections through the culinary arts and bold flavors."
     },
     {
         "name": "Zainab Joyo",
-        "image": "/assets/panelist headshot/Zainab Joyo Headshot.jpg",
-        "description": "CMO of Elaichi Co; Weaving cultural connections through the culinary arts and bold flavors."
+        "image": "/assets/panelist headshot/Zainab Joyo Headshot.png",
+        "description": "CMO of Elaichi Co; weaving cultural connections through the culinary arts and bold flavors."
     },
     {
-        "name": "Ahmad Abdallah",
+        "name": "Ahmad Abdullah",
         "image": "/assets/panelist headshot/Ahmad Abdallah.jpg",
         "description": "Co Founder of Nominal; driving brand storytelling and community-led growth for a culture-rooted jewelry brand."
     },
     {
         "name": "Maryam Ishtiaq",
-        "image": "/assets/panelist headshot/Maryam Ishtiaq Headshot.jpg",
+        "image": "/assets/panelist headshot/Maryam Ishtiaq Headshot 1.jpg",
         "description": "Founder of It’s Actually—premium halal bone broth built on clean ingredients, heritage, and product innovation."
+    },
+    {
+        "name": "Fadwa Lilili",
+        "image": "/assets/panelist headshot/Fadwa Hilili.png",
+        "description": "Founder of Fadwa Masala - pure, healthy masala blends — no preservatives, just real spice."
+    },
+    {
+        "name": "Faiyaz Bin Zia",
+        "image": "/assets/panelist headshot/Faiyaz Bin Zia.JPG",
+        "description": "Senior Content Specialist; crafting content that informs, uplifts, and transforms lives."
+    },
+    {
+        "name": "Ahmed Al-Kadri",
+        "image": "/assets/panelist headshot/Ahmed Al-Kadri.png",
+        "description": "Yemeni-American comedian finding humor and healing, one laugh at a time."
     }
 ]
