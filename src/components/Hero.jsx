@@ -50,12 +50,12 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-[16px] items-center justify-center relative shrink-0 w-full max-w-lg" data-name="Container" data-node-id="4:533">
-                        <a href="https://luma.com/getfocused2026" target="_blank" rel="noopener noreferrer" className="bg-white flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-gray-100 transition-colors border-2 border-white flex items-center justify-center shadow-lg text-decoration-none" data-name="Button" data-node-id="4:534">
+                        <a href="https://luma.com/getfocused2026" target="_blank" rel="noopener noreferrer" className="bg-white w-[280px] md:w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-gray-100 transition-colors border-2 border-white flex items-center justify-center shadow-lg text-decoration-none" data-name="Button" data-node-id="4:534">
                             <p className="font-['Transducer_Test:Bold',sans-serif] text-[#025054] text-[14px] text-center tracking-[1px] uppercase">
                                 Sign Up Now
                             </p>
                         </a>
-                        <a href="#about" className="flex-1 min-w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-[#3ea0ab]/10 transition-colors border-2 border-[#3ea0ab] flex items-center justify-center text-decoration-none" data-name="Button" data-node-id="4:536">
+                        <a href="#about" className="w-[280px] md:w-[200px] h-[54px] rounded-[4px] cursor-pointer hover:bg-[#3ea0ab]/10 transition-colors border-2 border-[#3ea0ab] flex items-center justify-center text-decoration-none" data-name="Button" data-node-id="4:536">
                             <p className="font-['Transducer_Test:Bold',sans-serif] text-[#3ea0ab] text-[14px] text-center tracking-[1px] uppercase">
                                 Learn More
                             </p>
@@ -67,7 +67,7 @@ export default function Hero() {
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: 'white' }}
-                        className="bg-[#dd664e] hover:bg-[#c55842] text-white min-w-[200px] h-[54px] rounded-[4px] font-bold text-[14px] uppercase tracking-[1px] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2 px-8"
+                        className="bg-[#dd664e] hover:bg-[#c55842] text-white w-[280px] md:w-[200px] h-[54px] rounded-[4px] font-bold text-[14px] uppercase tracking-[1px] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2"
                     >
                         Donate
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
