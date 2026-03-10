@@ -61,6 +61,19 @@ export default function Hero() {
                             </p>
                         </a>
                     </div>
+
+                    <a
+                        href="https://fundraise.dropletsofmercyusa.org/emergency-care-initiatives-in-partnership-with-focus-expo-2026"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'white' }}
+                        className="bg-[#dd664e] hover:bg-[#c55842] text-white px-12 py-4 rounded-[4px] font-bold text-[14px] uppercase tracking-[1px] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2 w-full max-w-lg md:w-auto"
+                    >
+                        Donate
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
