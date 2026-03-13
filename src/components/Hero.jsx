@@ -67,12 +67,9 @@ export default function Hero() {
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: 'white' }}
-                        className="bg-[#dd664e] hover:bg-[#c55842] text-white w-[280px] md:w-[200px] h-[54px] rounded-[4px] font-bold text-[14px] uppercase tracking-[1px] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2"
+                        className="bg-[#dd664e] hover:bg-[#c55842] text-white w-[280px] md:w-[340px] h-[54px] rounded-[4px] font-bold text-[14px] uppercase tracking-[1px] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center justify-center p-4 text-center mt-2"
                     >
-                        Donate
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
+                        Donate To Droplets Of Mercy
                     </a>
                 </div>
             </div>
