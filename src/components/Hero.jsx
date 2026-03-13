@@ -24,9 +24,9 @@ export default function Hero() {
                                 <p className="relative shrink-0 text-[#f2e7d1] max-w-full" data-node-id="4:526">
                                     Aligning Direction.
                                 </p>
-                                <h1 className="text-4xl md:text-[72px] font-['Transducer_Test:Regular',sans-serif] text-[#3ea0ab]">
+                                <p className="text-4xl md:text-[72px] font-['Transducer_Test:Regular',sans-serif] text-[#3ea0ab]">
                                     Through The Lens of Faith
-                                </h1>
+                                </p>
                             </div>
                             <div className="content-stretch flex flex-col items-start justify-center overflow-clip relative shrink-0" data-name="Paragraph" data-node-id="4:529">
                                 <p className="font-['Museo_Sans:500',sans-serif] leading-[0] not-italic relative shrink-0 text-[#f2e7d1] text-[20px] text-center" data-node-id="4:530">
